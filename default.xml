@@ -8,7 +8,7 @@
 	   fetch="ssh://git@linode.boundarydevices.com/boundary-imx-android-r13.4/" />
   <remote  name="boundary-github"
            fetch="git://github.com/boundarydevices/" />
-  <default revision="master"
+  <default revision="refs/tags/android-4.3_r2.1"
            remote="aosp"
            sync-j="4" />
 
