@@ -47,6 +47,7 @@
   <project path="bionic" name="android_bionic" remote="boundary-github" revision="imx_jb4.3_1.0.0-ga" />
   <project path="bootable/recovery" name="android_bootable_recovery" remote="boundary-github" revision="imx_jb4.3_1.0.0-ga" />
   <project path="external/ppp" name="android_external_ppp" remote="boundary-github" revision="imx_jb4.3_1.0.0-ga" />
+  <project path="external/skia" name="skia" remote="boundary-github" revision="imx_jb4.3_1.0.0-ga" />
   <project path="external/tinyalsa" name="tinyalsa" remote="boundary-github" revision="imx_jb4.3_1.0.0-ga" />
   <project path="frameworks/av" name="frameworks_av" remote="boundary-github" revision="imx_jb4.3_1.0.0-ga" />
   <project path="frameworks/base" name="android_frameworks_base" remote="boundary-github" revision="imx_jb4.3_1.0.0-ga" />
@@ -235,7 +236,6 @@
   <project path="external/robolectric" name="platform/external/robolectric" />
   <project path="external/safe-iop" name="platform/external/safe-iop" groups="pdk" />
   <project path="external/sepolicy" name="platform/external/sepolicy" groups="pdk" />
-  <project path="external/skia" name="platform/external/skia" />
   <project path="external/smack" name="platform/external/smack" />
   <project path="external/smali" name="platform/external/smali" />
   <project path="external/sonivox" name="platform/external/sonivox" groups="pdk" />
