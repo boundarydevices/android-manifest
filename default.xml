@@ -8,6 +8,8 @@
 	   fetch="ssh://git@linode.boundarydevices.com/boundary-imx-android-r13.4/" />
   <remote  name="boundary-github"
            fetch="git://github.com/boundarydevices/" />
+  <remote  name="github"
+           fetch="git://github.com/" />
   <default revision="refs/tags/android-4.3_r2.1"
            remote="aosp"
            sync-j="4" />
@@ -28,6 +30,9 @@
   <project path="build" name="android_build" remote="boundary-github" revision="boundary-imx_jb4.3_1.0.0-ga" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
+
+  <!-- projects added by Boundary -->
+  <project path="external/i2c-tools" name="suapapa/i2c-tools" remote="github" revision="master" />
 
   <!-- projects added by Freescale -->
   <project path="device/fsl-proprietary" name="fsl-proprietary" remote="boundary-linode" revision="imx_jb4.3_1.0.0-ga" />
