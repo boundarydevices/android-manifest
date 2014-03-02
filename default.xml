@@ -26,7 +26,7 @@
   <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="boundary-github" revision="boundary-imx_jb4.3_1.0.0-ga" />
   <project path="hardware/imx" name="hardware-imx" remote="boundary-linode" revision="boundary-imx_jb4.3_1.0.0-ga" />
   <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="boundary-github" revision="boundary-imx_jb4.3_1.0.0-ga" />
-  <project path="hardware/ti/wpan" name="android/hardware/ti/wpan" remote="boundary-linode" revision="boundary-imx_jb4.3_1.0.0-ga" />
+  <project path="hardware/ti/wpan" name="hardware/ti/wpan" remote="boundary-linode" revision="boundary-imx_jb4.3_1.0.0-ga" />
   <project path="system/core" name="android_system_core" remote="boundary-github" revision="boundary-imx_jb4.3_1.0.0-ga" />
   <project path="build" name="android_build" remote="boundary-github" revision="boundary-imx_jb4.3_1.0.0-ga" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
