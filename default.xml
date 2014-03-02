@@ -15,17 +15,18 @@
            sync-j="4" />
 
   <!-- Boundary Devices kernel and U-Boot -->
-  <project path="kernel_imx" name="linux-imx6" revision="boundary-jb4.3_1.0.0-ga" remote="boundary-github" />
+  <project path="kernel_imx" name="linux-imx6" revision="tiwi-bluetooth" remote="boundary-github" />
   <project path="bootable/bootloader/uboot-imx" name="u-boot-imx6" revision="production" remote="boundary-github" />
 
   <!-- Boundary Devices machine layer -->
-  <project path="device/boundary" name="android_device_boundary" remote="boundary-github" revision="boundary-imx_jb4.3_1.0.0-ga" />
+  <project path="device/boundary" name="android_device_boundary" remote="boundary-github" revision="tiwi-bluetooth" />
 
   <!-- Boundary Devices updates to other components -->
-  <project path="device/fsl" name="device/fsl" remote="boundary-linode" revision="boundary-imx_jb4.3_1.0.0-ga" />
+  <project path="device/fsl" name="device/fsl" remote="boundary-linode" revision="tiwi-bluetooth" />
   <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="boundary-github" revision="boundary-imx_jb4.3_1.0.0-ga" />
   <project path="hardware/imx" name="hardware-imx" remote="boundary-linode" revision="boundary-imx_jb4.3_1.0.0-ga" />
   <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="boundary-github" revision="boundary-imx_jb4.3_1.0.0-ga" />
+  <project path="hardware/ti/wpan" name="platform/hardware/ti/wpan" remote="boundary-linode" revision="boundary-imx_jb4.3_1.0.0-ga" />
   <project path="system/core" name="android_system_core" remote="boundary-github" revision="boundary-imx_jb4.3_1.0.0-ga" />
   <project path="build" name="android_build" remote="boundary-github" revision="boundary-imx_jb4.3_1.0.0-ga" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -309,7 +310,6 @@
   <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" />
   <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" groups="omap4" />
   <project path="hardware/ti/wlan" name="platform/hardware/ti/wlan" />
-  <project path="hardware/ti/wpan" name="platform/hardware/ti/wpan" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk-java" />
   <project path="ndk" name="platform/ndk" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" />
