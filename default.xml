@@ -33,6 +33,7 @@
   </project>
 
   <!-- projects added by Boundary -->
+  <project path="external/devregs" name="devregs" remote="boundary-github" revision="master" />
   <project path="external/i2c-tools" name="suapapa/i2c-tools" remote="github" revision="android" />
 
   <!-- projects added by Freescale -->
