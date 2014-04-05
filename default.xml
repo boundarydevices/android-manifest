@@ -19,7 +19,7 @@
   <project path="bootable/bootloader/uboot-imx" name="u-boot-imx6" revision="production" remote="boundary-github" />
 
   <!-- Boundary Devices machine layer -->
-  <project path="device/boundary" name="android_device_boundary" remote="boundary-github" revision="tiwi-bluetooth" />
+  <project path="device/boundary" name="android_device_boundary" remote="boundary-github" revision="boundary-imx_jb4.3_1.0.0-ga" />
 
   <!-- Boundary Devices updates to other components -->
   <project path="device/fsl" name="device/fsl" remote="boundary-linode" revision="tiwi-bluetooth" />
