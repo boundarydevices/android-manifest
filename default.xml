@@ -24,7 +24,7 @@
   <project path="device/boundary" name="android_device_boundary" remote="boundary-github" revision="boundary-imx_jb4.3_1.0.0-ga" />
 
   <!-- Boundary Devices updates to other components -->
-  <project path="device/fsl" name="device/fsl" remote="boundary-linode" revision="tiwi-bluetooth" />
+  <project path="device/fsl" name="device/fsl" remote="boundary-linode" revision="boundary-imx_jb4.3_1.0.0-ga" />
   <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="boundary-github" revision="boundary-imx_jb4.3_1.0.0-ga" />
   <project path="hardware/imx" name="hardware-imx" remote="boundary-linode" revision="boundary-imx_jb4.3_1.0.0-ga" />
   <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="boundary-github" revision="boundary-imx_jb4.3_1.0.0-ga" />
