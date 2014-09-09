@@ -4,10 +4,14 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com/"
            review="https://android-review.googlesource.com/" />
-  <remote  name="boundary-linode"
-	   fetch="ssh://git@linode.boundarydevices.com/boundary-imx-android-r13.4/" />
   <remote  name="boundary-github"
            fetch="git://github.com/boundarydevices/" />
+  <remote  name="boundary-linode"
+	   fetch="ssh://git@linode.boundarydevices.com/boundary-imx-android-r13.4/" />
+  <remote  name="github"
+           fetch="git://github.com/" />
+  <remote  name="gitorious"
+           fetch="git://gitorious.org/" />
   <default revision="refs/tags/android-4.4.2_r1"
            remote="aosp"
            sync-j="4" />
