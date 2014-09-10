@@ -50,8 +50,6 @@
   <project path="external/mtd-utils" name="android_external_mtd-utils" remote="boundary-github" revision="imx_kk4.4.2_1.0.0-ga" />
   <project path="external/ntfs-3g" name="ntfs-3g" remote="boundary-github" revision="imx_kk4.4.2_1.0.0-ga" />
   <project path="external/powerdebug" name="powerdebug" remote="boundary-github" revision="imx_kk4.4.2_1.0.0-ga" />
-  <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" remote="boundary-github" revision="imx_kk4.4.2_1.0.0-ga" />
-  <project path="hardware/realtek" name="android_hardware_realtek" remote="boundary-github" revision="imx_kk4.4.2_1.0.0-ga" />
 
   <!-- projects updated by Freescale -->
   <project path="bionic" name="android_bionic" remote="boundary-github" revision="imx_kk4.4.2_1.0.0-ga" />
