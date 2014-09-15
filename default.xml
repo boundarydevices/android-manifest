@@ -24,6 +24,9 @@
   <project path="device/boundary" name="android_device_boundary" remote="boundary-github" revision="boundary-kk4.4.2_1.0.0-ga" />
 
   <!-- Boundary Devices updates to other components -->
+  <project path="build" name="android_build" remote="boundary-github" revision="boundary-kk4.4.2_1.0.0-ga" groups="pdk" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
   <project path="device/fsl" name="device/fsl" remote="boundary-linode" revision="boundary-kk4.4.2_1.0.0-ga" />
   <project path="hardware/imx" name="hardware-imx" remote="boundary-linode" revision="boundary-kk4.4.2_1.0.0-ga" />
   <project path="hardware/ti/wpan" name="hardware/ti/wpan" remote="boundary-linode" revision="boundary-kk4.4.2_1.0.0-ga" />
@@ -54,9 +57,6 @@
   <!-- projects updated by Freescale -->
   <project path="bionic" name="android_bionic" remote="boundary-github" revision="imx_kk4.4.2_1.0.0-ga" />
   <project path="bootable/recovery" name="android_bootable_recovery" remote="boundary-github" revision="imx_kk4.4.2_1.0.0-ga" />
-  <project path="build" name="android_build" remote="boundary-github" revision="imx_kk4.4.2_1.0.0-ga" groups="pdk" >
-    <copyfile src="core/root.mk" dest="Makefile" />
-  </project>
   <project path="external/ppp" name="android_external_ppp" remote="boundary-github" revision="imx_kk4.4.2_1.0.0-ga" />
   <project path="external/tinyalsa" name="tinyalsa" remote="boundary-github" revision="imx_kk4.4.2_1.0.0-ga" />
   <project path="frameworks/av" name="frameworks_av" remote="boundary-github" revision="imx_kk4.4.2_1.0.0-ga" />
