@@ -29,7 +29,7 @@
   </project>
   <project path="device/fsl" name="device/fsl" remote="boundary-linode" revision="boundary-kk4.4.2_1.0.0-ga" />
   <project path="hardware/imx" name="hardware-imx" remote="boundary-linode" revision="boundary-kk4.4.2_1.0.0-ga" />
-  <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" groups="pdk" remote="boundary-linode" revision="boundary-kk4.4.2_1.0.0-ga" />
+  <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" groups="pdk" remote="boundary-github" revision="boundary-kk4.4.2_1.0.0-ga" />
   <project path="hardware/ti/wpan" name="hardware/ti/wpan" remote="boundary-linode" revision="boundary-kk4.4.2_1.0.0-ga" />
   <project path="system/core" name="android_system_core" remote="boundary-github" revision="boundary-kk4.4.2_1.0.0-ga" />
   <project path="packages/apps/fsl_imx_demo" name="fsl_imx_demo" remote="boundary-github" revision="boundary-kk4.4.2_1.0.0-ga" />
