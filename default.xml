@@ -7,8 +7,6 @@
   <remote  name="boundary-github"
            fetch="git://github.com/boundarydevices/" />
   <remote  name="boundary-linode"
-	   fetch="ssh://git@linode.boundarydevices.com/boundary-imx-android-r13.4/" />
-  <remote  name="boundary-linode2"
 	   fetch="ssh://git@linode.boundarydevices.com/" />
   <remote  name="freescale"
 	   fetch="git://git.freescale.com/" />
@@ -22,16 +20,16 @@
 
   <!-- projects added by Freescale -->
   <project path="device/fsl" name="device/fsl" remote="boundary-linode" revision="imx-kk4.4.3-beta" />
-  <project path="device/fsl-proprietary" name="fsl-proprietary" remote="boundary-linode" revision="imx-kk4.4.3-beta" />
+  <project path="device/fsl-proprietary" name="device/fsl-proprietary" remote="boundary-linode" revision="imx-kk4.4.3-beta" />
   <project path="external/busybox" name="android-busybox" remote="boundary-github" revision="imx-kk4.4.3-beta" />
-  <project path="external/fsl_vpu_omx" name="fsl_vpu_omx" remote="boundary-linode2" revision="imx-kk4.4.3-beta" />
-  <project path="external/linux-firmware-imx" name="linux-firmware-imx" remote="boundary-linode" revision="imx-kk4.4.3-beta" />
+  <project path="external/fsl_vpu_omx" name="external/fsl_vpu_omx" remote="boundary-linode" revision="imx-kk4.4.3-beta" />
+  <project path="external/linux-firmware-imx" name="external/linux-firmware-imx" remote="boundary-linode" revision="imx-kk4.4.3-beta" />
   <project path="external/linux-lib" name="android_external_linux-lib" remote="boundary-github" revision="imx-kk4.4.3-beta" />
   <project path="external/linux-test" name="imx-linux-test" remote="boundary-github" revision="imx-kk4.4.3-beta" />
   <project path="external/mtd-utils" name="android_external_mtd-utils" remote="boundary-github" revision="imx-kk4.4.3-beta" />
   <project path="external/ntfs-3g" name="ntfs-3g" remote="boundary-github" revision="imx-kk4.4.3-beta" />
   <project path="external/powerdebug" name="powerdebug" remote="boundary-github" revision="imx-kk4.4.3-beta" />
-  <project path="hardware/imx" name="hardware-imx" remote="boundary-linode" revision="imx-kk4.4.3-beta" />
+  <project path="hardware/imx" name="hardware/imx" remote="boundary-linode" revision="imx-kk4.4.3-beta" />
   <project path="hardware/realtek" name="android_hardware_realtek" remote="boundary-github" revision="imx-kk4.4.3-beta" />
   <project path="kernel_imx" name="imx/linux-2.6-imx" remote="freescale" revision="5dbcfe3d3f75e9e53c8b90f8f3ce5987d9c94123" />
   <project path="packages/apps/fsl_imx_demo" name="fsl_imx_demo" remote="boundary-github" revision="imx-kk4.4.3-beta" />
