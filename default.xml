@@ -28,6 +28,7 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="device/fsl" name="device/fsl" remote="boundary-linode" revision="boundary-kk4.4.2_1.0.0-ga" />
+  <project path="frameworks/native" name="frameworks_native" remote="boundary-github" revision="boundary-imx_kk4.4.2_1.0.0-ga" />
   <project path="hardware/imx" name="hardware-imx" remote="boundary-linode" revision="boundary-kk4.4.2_1.0.0-ga" />
   <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" groups="pdk" remote="boundary-github" revision="boundary-kk4.4.2_1.0.0-ga" />
   <project path="hardware/ti/wpan" name="hardware/ti/wpan" remote="boundary-linode" revision="boundary-kk4.4.2_1.0.0-ga" />
@@ -63,7 +64,6 @@
   <project path="external/tinyalsa" name="tinyalsa" remote="boundary-github" revision="imx_kk4.4.2_1.0.0-ga" />
   <project path="frameworks/av" name="frameworks_av" remote="boundary-github" revision="imx_kk4.4.2_1.0.0-ga" />
   <project path="frameworks/base" name="android_frameworks_base" remote="boundary-github" revision="imx_kk4.4.2_1.0.0-ga" />
-  <project path="frameworks/native" name="frameworks_native" remote="boundary-github" revision="imx_kk4.4.2_1.0.0-ga" />
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="boundary-github" revision="imx_kk4.4.2_1.0.0-ga" />
   <project path="hardware/ril" name="android_hardware_ril" remote="boundary-github" revision="imx_kk4.4.2_1.0.0-ga" />
   <project path="libcore" name="android_libcore" remote="boundary-github" revision="imx_kk4.4.2_1.0.0-ga" />
