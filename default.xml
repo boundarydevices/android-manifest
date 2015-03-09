@@ -12,8 +12,6 @@
 	   fetch="git://git.freescale.com/" />
   <remote  name="github"
            fetch="git://github.com/" />
-  <remote  name="gitorious"
-           fetch="git://gitorious.org/" />
   <default revision="refs/tags/android-4.4.3_r1"
            remote="aosp"
            sync-j="4" />
@@ -43,7 +41,7 @@
   <!-- projects added by Boundary -->
   <project path="external/devregs" name="devregs" remote="boundary-github" revision="master" />
   <project path="external/i2c-tools" name="suapapa/i2c-tools" remote="github" revision="android" />
-  <project path="external/can-utils" name="linux-can/can-utils.git" remote="gitorious" revision="master" />
+  <project path="external/can-utils" name="linux-can/can-utils.git" remote="github" revision="master" />
   <project path="external/koush/Superuser" name="cyanogenmod/Superuser" remote="github" revision="master" />
   <project path="external/koush/Widgets" name="cyanogenmod/Widgets" remote="github" revision="master" />
 
