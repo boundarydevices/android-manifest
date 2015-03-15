@@ -18,8 +18,35 @@
            remote="aosp"
            sync-j="4" />
 
+  <!-- Boundary Devices kernel and U-Boot -->
+  <project path="kernel_imx" name="linux-imx6" revision="boundary-kk4.4.2_1.0.0-ga" remote="boundary-github" />
+  <project path="bootable/bootloader/uboot-imx" name="u-boot-imx6" revision="production" remote="boundary-github" />
+
+  <!-- Boundary Devices machine layer -->
+  <project path="device/boundary" name="android_device_boundary" remote="boundary-github" revision="boundary-kk4.4.2_1.0.0-ga" />
+
+  <!-- Boundary Devices updates to other components -->
+  <project path="build" name="android_build" remote="boundary-github" revision="boundary-imx-kk4.4.3_2.0.0-ga" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+  <project path="device/fsl" name="device/fsl" remote="boundary-linode" revision="boundary-imx-kk4.4.3_2.0.0-ga" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="boundary-github" revision="boundary-imx-kk4.4.3_2.0.0-ga" />
+  <project path="frameworks/native" name="frameworks_native" remote="boundary-github" revision="boundary-imx-kk4.4.3_2.0.0-ga" />
+  <project path="hardware/imx" name="hardware/imx" remote="boundary-linode" revision="boundary-imx-kk4.4.3_2.0.0-ga" />
+  <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" groups="pdk" remote="boundary-github" revision="boundary-imx-kk4.4.3_2.0.0-ga" />
+  <project path="hardware/ti/wpan" name="platform/hardware/ti/wpan" revision="5beae4748cd36f4464a43e0a870c881a3f8f1b5b" />
+  <project path="system/core" name="android_system_core" remote="boundary-github" revision="boundary-imx-kk4.4.3_2.0.0-ga" />
+  <project path="packages/apps/Settings" name="android_packages_apps_settings" remote="boundary-github" revision="boundary-imx-kk4.4.3_2.0.0-ga" />
+  <project path="system/extras" name="android-system-extras" remote="boundary-github" revision="boundary-imx-kk4.4.3_2.0.0-ga" groups="pdk" />
+
+  <!-- projects added by Boundary -->
+  <project path="external/devregs" name="devregs" remote="boundary-github" revision="master" />
+  <project path="external/i2c-tools" name="suapapa/i2c-tools" remote="github" revision="android" />
+  <project path="external/can-utils" name="linux-can/can-utils.git" remote="gitorious" revision="master" />
+  <project path="external/koush/Superuser" name="cyanogenmod/Superuser" remote="github" revision="master" />
+  <project path="external/koush/Widgets" name="cyanogenmod/Widgets" remote="github" revision="master" />
+
   <!-- projects added by Freescale -->
-  <project path="device/fsl" name="device/fsl" remote="boundary-linode" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="device/fsl-proprietary" name="device/fsl-proprietary" remote="boundary-linode" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="external/busybox" name="android-busybox" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="external/fsl_vpu_omx" name="external/fsl_vpu_omx" remote="boundary-linode" revision="imx-kk4.4.3_2.0.0-ga" />
@@ -29,18 +56,12 @@
   <project path="external/mtd-utils" name="android_external_mtd-utils" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="external/ntfs-3g" name="ntfs-3g" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="external/powerdebug" name="powerdebug" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
-  <project path="hardware/imx" name="hardware/imx" remote="boundary-linode" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="hardware/realtek" name="android_hardware_realtek" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
-  <project path="kernel_imx" name="imx/linux-2.6-imx" remote="freescale" revision="5dbcfe3d3f75e9e53c8b90f8f3ce5987d9c94123" />
   <project path="packages/apps/fsl_imx_demo" name="fsl_imx_demo" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
-  <project path="bootable/bootloader/uboot-imx" name="imx/uboot-imx" remote="freescale" revision="imx_v2014.04_3.10.31_1.1.0_beta" />
 														     sl
   <!-- projects changed by Freescale -->
   <project path="bionic" name="android_bionic" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="bootable/recovery" name="android_bootable_recovery" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
-  <project path="build" name="android_build" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" >
-    <copyfile src="core/root.mk" dest="Makefile" />
-  </project>
   <project path="dalvik" name="android_dalvik" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="external/chromium_org" name="android_external_chromium_org" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="external/dnsmasq" name="android_external_dnsmasq" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
@@ -53,8 +74,6 @@
   <project path="external/tinyalsa" name="tinyalsa" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="frameworks/av" name="frameworks_av" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
-  <project path="frameworks/native" name="frameworks_native" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="frameworks/webview" name="android_frameworks_webview" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
@@ -67,12 +86,9 @@
   <project path="packages/apps/LegacyCamera" name="LegacyCamera" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="packages/apps/Mms" name="android_packages_apps_Mms" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="packages/apps/Music" name="android_packages_apps_music" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
-  <project path="packages/apps/Settings" name="android_packages_apps_settings" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="packages/apps/SoundRecorder" name="android_packages_apps_soundrecorder" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="packages/providers/MediaProvider" name="android_packages_providers_mediaprovider" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="packages/wallpapers/Basic" name="android_packages_wallpapers_basic" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
-  <project path="system/core" name="android_system_core" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
-  <project path="system/extras" name="android-system-extras" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="system/netd" name="android_system_netd" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="system/vold" name="android_system_vold" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
 
@@ -321,7 +337,6 @@
   <project path="frameworks/volley" name="platform/frameworks/volley" />
   <project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" />
   <project path="hardware/akm" name="platform/hardware/akm" />
-  <project path="hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt" groups="pdk" />
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" groups="broadcom_wlan" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
   <project path="hardware/qcom/audio" name="platform/hardware/qcom/audio" groups="qcom" />
