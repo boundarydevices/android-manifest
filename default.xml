@@ -70,7 +70,6 @@
   <project path="external/ppp" name="android_external_ppp" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="external/skia" name="skia" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="external/tinyalsa" name="tinyalsa" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
-  <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="frameworks/av" name="frameworks_av" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="frameworks/webview" name="android_frameworks_webview" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
@@ -294,6 +293,7 @@
   <project path="external/valgrind" name="platform/external/valgrind" groups="pdk" />
   <project path="external/webp" name="platform/external/webp" />
   <project path="external/webrtc" name="platform/external/webrtc" groups="pdk" />
+  <project path="external/wpa_supplicant_8" name="platform/external/wpa_supplicant_8" />
   <project path="external/xmlwriter" name="platform/external/xmlwriter" />
   <project path="external/xmp_toolkit" name="platform/external/xmp_toolkit" />
   <project path="external/yaffs2" name="platform/external/yaffs2" groups="pdk" />
