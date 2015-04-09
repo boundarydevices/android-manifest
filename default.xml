@@ -36,6 +36,7 @@
   <project path="system/core" name="android_system_core" remote="boundary-github" revision="boundary-imx-kk4.4.3_2.0.0-ga" />
   <project path="packages/apps/Settings" name="android_packages_apps_settings" remote="boundary-github" revision="boundary-imx-kk4.4.3_2.0.0-ga" />
   <project path="system/extras" name="android-system-extras" remote="boundary-github" revision="boundary-imx-kk4.4.3_2.0.0-ga" groups="pdk" />
+  <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="boundary-github" revision="boundary-imx-kk4.4.3_2.0.0-ga" />
 
   <!-- projects added by Boundary -->
   <project path="external/devregs" name="devregs" remote="boundary-github" revision="master" />
@@ -73,7 +74,6 @@
   <project path="frameworks/av" name="frameworks_av" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="frameworks/webview" name="android_frameworks_webview" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
-  <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="hardware/ril" name="android_hardware_ril" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="libcore" name="android_libcore" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
