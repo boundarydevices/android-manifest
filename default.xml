@@ -50,6 +50,7 @@
   <project path="device/fsl-codec" name="device/fsl-codec" remote="boundary-linode" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="device/fsl-proprietary" name="device/fsl-proprietary" remote="boundary-linode" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="external/busybox" name="android-busybox" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
+  <project path="external/fsl_aacp_dec" name="external/fsl_aacp_dec" remote="boundary-linode" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="external/fsl_vpu_omx" name="external/fsl_vpu_omx" remote="boundary-linode" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="external/linux-firmware-imx" name="external/linux-firmware-imx" remote="boundary-linode" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="external/linux-lib" name="android_external_linux-lib" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
