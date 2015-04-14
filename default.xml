@@ -47,6 +47,7 @@
   <project path="external/koush/Widgets" name="cyanogenmod/Widgets" remote="github" revision="master" />
 
   <!-- projects added by Freescale -->
+  <project path="device/fsl-codec" name="device/fsl-codec" remote="boundary-linode" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="device/fsl-proprietary" name="device/fsl-proprietary" remote="boundary-linode" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="external/busybox" name="android-busybox" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="external/fsl_vpu_omx" name="external/fsl_vpu_omx" remote="boundary-linode" revision="imx-kk4.4.3_2.0.0-ga" />
