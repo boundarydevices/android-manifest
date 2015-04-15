@@ -32,6 +32,7 @@
   <project path="frameworks/native" name="frameworks_native" remote="boundary-github" revision="boundary-imx-kk4.4.3_2.0.0-ga" />
   <project path="hardware/imx" name="hardware/imx" remote="boundary-linode" revision="boundary-imx-kk4.4.3_2.0.0-ga" />
   <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" groups="pdk" remote="boundary-github" revision="boundary-imx-kk4.4.3_2.0.0-ga" />
+  <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="boundary-github" revision="boundary-imx-kk4.4.3_2.0.0-ga" />
   <project path="hardware/ti/wpan" name="android_hardware_ti_wpan" remote="boundary-github" revision="boundary-imx-kk4.4.3_2.0.0-ga" />
   <project path="system/core" name="android_system_core" remote="boundary-github" revision="boundary-imx-kk4.4.3_2.0.0-ga" />
   <project path="packages/apps/Settings" name="android_packages_apps_settings" remote="boundary-github" revision="boundary-imx-kk4.4.3_2.0.0-ga" />
@@ -328,7 +329,6 @@
   <project path="frameworks/volley" name="platform/frameworks/volley" />
   <project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" />
   <project path="hardware/akm" name="platform/hardware/akm" />
-  <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" groups="broadcom_wlan" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
   <project path="hardware/qcom/audio" name="platform/hardware/qcom/audio" groups="qcom" />
   <project path="hardware/qcom/bt" name="platform/hardware/qcom/bt" groups="qcom" />
