@@ -43,8 +43,8 @@
   <project path="external/devregs" name="devregs" remote="boundary-github" revision="master" />
   <project path="external/i2c-tools" name="suapapa/i2c-tools" remote="github" revision="android" />
   <project path="external/can-utils" name="linux-can/can-utils.git" remote="github" revision="master" />
-  <project path="external/koush/Superuser" name="cyanogenmod/Superuser" remote="github" revision="master" />
-  <project path="external/koush/Widgets" name="cyanogenmod/Widgets" remote="github" revision="master" />
+  <project path="external/koush/Superuser" name="cyanogenmod/Superuser" remote="github" revision="stable/cm-11.0-XNG2S" />
+  <project path="external/koush/Widgets" name="cyanogenmod/Widgets" remote="github" revision="stable/cm-11.0-XNG2S" />
 
   <!-- projects added by Freescale -->
   <project path="device/fsl-codec" name="device/fsl-codec" remote="boundary-linode" revision="imx-kk4.4.3_2.0.0-ga" />
