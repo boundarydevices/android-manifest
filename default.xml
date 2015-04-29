@@ -24,6 +24,7 @@
   <project path="device/boundary" name="android_device_boundary" remote="boundary-github" revision="boundary-imx-kk4.4.3_2.0.0-ga" />
 
   <!-- Boundary Devices updates to other components -->
+  <project path="bootable/recovery" name="android_bootable_recovery" remote="boundary-github" revision="boundary-imx-kk4.4.3_2.0.0-ga" />
   <project path="build" name="android_build" remote="boundary-github" revision="boundary-imx-kk4.4.3_2.0.0-ga" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
@@ -64,7 +65,6 @@
 														     sl
   <!-- projects changed by Freescale -->
   <project path="bionic" name="android_bionic" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
-  <project path="bootable/recovery" name="android_bootable_recovery" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="dalvik" name="android_dalvik" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="external/chromium_org" name="android_external_chromium_org" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="external/dnsmasq" name="android_external_dnsmasq" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
