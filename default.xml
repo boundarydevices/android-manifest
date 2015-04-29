@@ -17,7 +17,7 @@
            sync-j="4" />
 
   <!-- Boundary Devices kernel and U-Boot -->
-  <project path="kernel_imx" name="linux-imx6" revision="boundary-imx-kk4.4.3_2.0.0-ga-pass3" remote="boundary-github" />
+  <project path="kernel_imx" name="linux-imx6" revision="boundary-imx-kk4.4.3_2.0.0-ga" remote="boundary-github" />
   <project path="bootable/bootloader/uboot-imx" name="u-boot-imx6" revision="production" remote="boundary-github" />
 
   <!-- Boundary Devices machine layer -->
