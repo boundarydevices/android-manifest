@@ -62,7 +62,8 @@
   <project path="external/powerdebug" name="powerdebug" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="hardware/realtek" name="android_hardware_realtek" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="packages/apps/fsl_imx_demo" name="fsl_imx_demo" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
-														     sl
+  <project path="external/wfd-proprietary" name="wfd-proprietary" remote="boundary-linode" revision="imx-kk4.4.3_2.0.0-ga" />
+
   <!-- projects changed by Freescale -->
   <project path="bionic" name="android_bionic" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="dalvik" name="android_dalvik" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
