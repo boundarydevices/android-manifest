@@ -70,19 +70,25 @@
   <!-- projects changed by Freescale -->
   <project path="bionic" name="android_bionic" remote="boundary-github" revision="imx-l5.0.0_1.0.0-ga" />
   <project path="dalvik" name="android_dalvik" remote="boundary-github" revision="imx-l5.0.0_1.0.0-ga" />
+  <project path="external/bluetooth/bluedroid" name="android_external_bluetooth_bluedroid" remote="boundary-github" revision="imx-l5.0.0_1.0.0-ga" />
   <project path="external/dnsmasq" name="android_external_dnsmasq" remote="boundary-github" revision="imx-l5.0.0_1.0.0-ga" />
   <project path="external/kernel-headers" name="android_external_kernel-headers" remote="boundary-github" revision="imx-l5.0.0_1.0.0-ga" />
+  <project path="external/libselinux" name="android_external_libselinux" remote="boundary-github" revision="imx-l5.0.0_1.0.0-ga" />
   <project path="external/linux-tools-perf" name="android_external_linux-tools-perf" remote="boundary-github" revision="imx-l5.0.0_1.0.0-ga" />
   <project path="external/ppp" name="android_external_ppp" remote="boundary-github" revision="imx-l5.0.0_1.0.0-ga" />
   <project path="external/skia" name="skia" remote="boundary-github" revision="imx-l5.0.0_1.0.0-ga" />
   <project path="external/tinyalsa" name="tinyalsa" remote="boundary-github" revision="imx-l5.0.0_1.0.0-ga" />
+  <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="boundary-github" revision="imx-l5.0.0_1.0.0-ga" />
   <project path="frameworks/av" name="frameworks_av" remote="boundary-github" revision="imx-l5.0.0_1.0.0-ga" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="boundary-github" revision="imx-l5.0.0_1.0.0-ga" />
   <project path="frameworks/webview" name="android_frameworks_webview" remote="boundary-github" revision="imx-l5.0.0_1.0.0-ga" />
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="boundary-github" revision="imx-l5.0.0_1.0.0-ga" />
   <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" remote="boundary-github" revision="imx-l5.0.0_1.0.0-ga" />
   <project path="hardware/ril" name="android_hardware_ril" remote="boundary-github" revision="imx-l5.0.0_1.0.0-ga" />
   <project path="libcore" name="android_libcore" remote="boundary-github" revision="imx-l5.0.0_1.0.0-ga" />
+  <project path="packages/apps/Browser" name="android_browser" remote="boundary-github" revision="imx-l5.0.0_1.0.0-ga" />
   <project path="packages/apps/Camera2" name="android_packages_apps_Camera2" remote="boundary-github" revision="imx-l5.0.0_1.0.0-ga" />
+  <project path="packages/apps/Gallery" name="android_packages_apps_Gallery" remote="boundary-github" revision="imx-l5.0.0_1.0.0-ga" />
   <project path="packages/apps/Gallery2" name="android_app_Gallery2" remote="boundary-github" revision="imx-l5.0.0_1.0.0-ga" />
   <project path="packages/apps/Launcher2" name="android_packages_apps_Launcher2" remote="boundary-github" revision="imx-l5.0.0_1.0.0-ga" />
   <project path="packages/apps/LegacyCamera" name="LegacyCamera" remote="boundary-github" revision="imx-l5.0.0_1.0.0-ga" />
@@ -148,7 +154,6 @@
   <project path="external/arduino" name="platform/external/arduino" groups="pdk-cw-fs" />
   <project path="external/bison" name="platform/external/bison" groups="pdk" />
   <project path="external/blktrace" name="platform/external/blktrace" groups="pdk-cw-fs" />
-  <project path="external/bluetooth/bluedroid" name="platform/external/bluetooth/bluedroid" groups="pdk" />
   <project path="external/bouncycastle" name="platform/external/bouncycastle" groups="pdk" />
   <project path="external/bsdiff" name="platform/external/bsdiff" groups="pdk" />
   <project path="external/bzip2" name="platform/external/bzip2" groups="pdk" />
@@ -267,7 +272,6 @@
   <project path="external/libphonenumber" name="platform/external/libphonenumber" groups="pdk-cw-fs" />
   <project path="external/libpng" name="platform/external/libpng" groups="pdk" />
   <project path="external/libseccomp-helper" name="platform/external/libseccomp-helper" groups="pdk-cw-fs" />
-  <project path="external/libselinux" name="platform/external/libselinux" groups="pdk" />
   <project path="external/libsepol" name="platform/external/libsepol" groups="pdk" />
   <project path="external/libssh2" name="platform/external/libssh2" groups="pdk-cw-fs" />
   <project path="external/libunwind" name="platform/external/libunwind" groups="pdk" />
@@ -345,7 +349,6 @@
   <project path="external/vixl" name="platform/external/vixl" groups="pdk" />
   <project path="external/webp" name="platform/external/webp" groups="pdk-cw-fs,qcom_msm8x26" />
   <project path="external/webrtc" name="platform/external/webrtc" groups="pdk" />
-  <project path="external/wpa_supplicant_8" name="platform/external/wpa_supplicant_8" groups="pdk" />
   <project path="external/xmlwriter" name="platform/external/xmlwriter" groups="pdk-cw-fs" />
   <project path="external/xmp_toolkit" name="platform/external/xmp_toolkit" groups="pdk-cw-fs" />
   <project path="external/yaffs2" name="platform/external/yaffs2" groups="pdk" />
@@ -376,7 +379,6 @@
   <project path="frameworks/opt/net/ethernet" name="platform/frameworks/opt/net/ethernet" />
   <project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" groups="pdk-cw-fs" />
   <project path="frameworks/opt/setupwizard" name="platform/frameworks/opt/setupwizard" groups="pdk-cw-fs" />
-  <project path="frameworks/opt/telephony" name="platform/frameworks/opt/telephony" groups="pdk" />
   <project path="frameworks/opt/timezonepicker" name="platform/frameworks/opt/timezonepicker" groups="pdk-cw-fs" />
   <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" groups="pdk-cw-fs" />
   <project path="frameworks/opt/widget" name="platform/frameworks/opt/widget" groups="pdk-cw-fs" />
@@ -424,7 +426,6 @@
   <project path="ndk" name="platform/ndk" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" />
   <project path="packages/apps/Bluetooth" name="platform/packages/apps/Bluetooth" groups="pdk-cw-fs" />
-  <project path="packages/apps/Browser" name="platform/packages/apps/Browser" />
   <project path="packages/apps/Calculator" name="platform/packages/apps/Calculator" />
   <project path="packages/apps/Calendar" name="platform/packages/apps/Calendar" />
   <project path="packages/apps/Camera" name="platform/packages/apps/Camera" />
@@ -436,7 +437,6 @@
   <project path="packages/apps/Dialer" name="platform/packages/apps/Dialer" />
   <project path="packages/apps/Email" name="platform/packages/apps/Email" />
   <project path="packages/apps/Exchange" name="platform/packages/apps/Exchange" />
-  <project path="packages/apps/Gallery" name="platform/packages/apps/Gallery" />
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" />
   <project path="packages/apps/InCallUI" name="platform/packages/apps/InCallUI" />
   <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" />
