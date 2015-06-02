@@ -95,6 +95,7 @@
   <project path="packages/apps/SoundRecorder" name="android_packages_apps_soundrecorder" remote="boundary-github" revision="imx-l5.0.0_1.0.0-ga" />
   <project path="packages/providers/MediaProvider" name="android_packages_providers_mediaprovider" remote="boundary-github" revision="imx-l5.0.0_1.0.0-ga" />
   <project path="packages/wallpapers/Basic" name="android_packages_wallpapers_basic" remote="boundary-github" revision="imx-l5.0.0_1.0.0-ga" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.6" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6" revision="refs/tags/android-4.4.3_r1" />
   <project path="system/netd" name="android_system_netd" remote="boundary-github" revision="imx-l5.0.0_1.0.0-ga" />
   <project path="system/vold" name="android_system_vold" remote="boundary-github" revision="imx-l5.0.0_1.0.0-ga" />
 
