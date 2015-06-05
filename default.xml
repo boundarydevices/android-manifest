@@ -17,11 +17,11 @@
            sync-j="4" />
 
   <!-- Boundary Devices kernel and U-Boot -->
-  <project path="kernel_imx" name="linux-imx6" revision="boundary-imx-kk4.4.3_2.0.0-ga" remote="boundary-github" />
+  <project path="kernel_imx" name="linux-imx6" revision="boundary-imx-kk4.4.3_2.0.0-ga-hdmi_input" remote="boundary-github" />
   <project path="bootable/bootloader/uboot-imx" name="u-boot-imx6" revision="production" remote="boundary-github" />
 
   <!-- Boundary Devices machine layer -->
-  <project path="device/boundary" name="android_device_boundary" remote="boundary-github" revision="boundary-imx-kk4.4.3_2.0.0-ga" />
+  <project path="device/boundary" name="android_device_boundary" remote="boundary-github" revision="boundary-imx-kk4.4.3_2.0.0-ga-hdmi_input" />
 
   <!-- Boundary Devices updates to other components -->
   <project path="bootable/recovery" name="android_bootable_recovery" remote="boundary-github" revision="boundary-imx-kk4.4.3_2.0.0-ga" />
@@ -31,7 +31,7 @@
   <project path="device/fsl" name="device/fsl" remote="boundary-linode" revision="boundary-imx-kk4.4.3_2.0.0-ga" />
   <project path="frameworks/base" name="android_frameworks_base" remote="boundary-github" revision="boundary-imx-kk4.4.3_2.0.0-ga" />
   <project path="frameworks/native" name="frameworks_native" remote="boundary-github" revision="boundary-imx-kk4.4.3_2.0.0-ga" />
-  <project path="hardware/imx" name="hardware/imx" remote="boundary-linode" revision="boundary-imx-kk4.4.3_2.0.0-ga" />
+  <project path="hardware/imx" name="hardware/imx" remote="boundary-linode" revision="boundary-imx-kk4.4.3_2.0.0-ga-hdmi_input" />
   <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" groups="pdk" remote="boundary-github" revision="boundary-imx-kk4.4.3_2.0.0-ga" />
   <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="boundary-github" revision="boundary-imx-kk4.4.3_2.0.0-ga" />
   <project path="hardware/ti/wpan" name="android_hardware_ti_wpan" remote="boundary-github" revision="boundary-imx-kk4.4.3_2.0.0-ga" />
