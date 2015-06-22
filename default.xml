@@ -30,6 +30,7 @@
   </project>
   <project path="device/fsl" name="device/fsl" remote="boundary-linode" revision="boundary-imx-l5.0.0_1.0.0-ga" />
   <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="boundary-github" revision="boundary-imx-l5.0.0_1.0.0-ga" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="boundary-github" revision="boundary-imx-l5.0.0_1.0.0-ga" />
   <project path="frameworks/native" name="frameworks_native" remote="boundary-github" revision="boundary-imx-l5.0.0_1.0.0-ga" />
   <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" groups="pdk" remote="boundary-github" revision="boundary-imx-l5.0.0_1.0.0-ga" />
   <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="boundary-github" revision="boundary-imx-l5.0.0_1.0.0-ga" />
@@ -79,7 +80,6 @@
   <project path="external/skia" name="skia" remote="boundary-github" revision="imx-l5.0.0_1.0.0-ga" />
   <project path="external/tinyalsa" name="tinyalsa" remote="boundary-github" revision="imx-l5.0.0_1.0.0-ga" />
   <project path="frameworks/av" name="frameworks_av" remote="boundary-github" revision="imx-l5.0.0_1.0.0-ga" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="boundary-github" revision="imx-l5.0.0_1.0.0-ga" />
   <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="boundary-github" revision="imx-l5.0.0_1.0.0-ga" />
   <project path="frameworks/webview" name="android_frameworks_webview" remote="boundary-github" revision="imx-l5.0.0_1.0.0-ga" />
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="boundary-github" revision="imx-l5.0.0_1.0.0-ga" />
