@@ -16,6 +16,14 @@
            remote="aosp"
            sync-j="4" />
 
+  <!-- CNT specific packages/revisions -->
+  <project path="external/dta" name="android_external_nfcdta" remote="boundary-github" revision="boundary-imx-l5.0.0_1.0.0-ga_nxp-nci" />
+  <project path="external/libnfc-nci" name="android_external_libnfc-nci" remote="boundary-github" revision="boundary-imx-l5.0.0_1.0.0-ga_nxp-nci" />
+  <project path="external/mxt-app" name="mxt-app" remote="boundary-github" revision="boundary-imx-l5.0.0_1.0.0-ga" />
+  <project path="external/mxt-app/src/libusbdroid/code" name="ndyer/libusbdroid" remote="github" revision="master" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="boundary-github" revision="boundary-imx-l5.0.0_1.0.0-ga_nxp-nci" />
+  <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="boundary-github" revision="boundary-imx-l5.0.0_1.0.0-ga_nxp-nci" />
+
   <!-- Boundary Devices kernel and U-Boot -->
   <project path="bootable/bootloader/uboot-imx" name="u-boot-imx6" revision="production" remote="boundary-github" />
   <project path="kernel_imx" name="linux-imx6" revision="boundary-imx-l5.0.0_1.0.0-ga" remote="boundary-github" />
@@ -30,7 +38,6 @@
   </project>
   <project path="device/fsl" name="device/fsl" remote="boundary-linode" revision="boundary-imx-l5.0.0_1.0.0-ga" />
   <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="boundary-github" revision="boundary-imx-l5.0.0_1.0.0-ga" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="boundary-github" revision="boundary-imx-l5.0.0_1.0.0-ga" />
   <project path="frameworks/native" name="frameworks_native" remote="boundary-github" revision="boundary-imx-l5.0.0_1.0.0-ga" />
   <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" groups="pdk" remote="boundary-github" revision="boundary-imx-l5.0.0_1.0.0-ga" />
   <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="boundary-github" revision="boundary-imx-l5.0.0_1.0.0-ga" />
@@ -246,7 +253,6 @@
   <project path="external/libgsm" name="platform/external/libgsm" groups="pdk" />
   <project path="external/liblzf" name="platform/external/liblzf" groups="pdk" />
   <project path="external/libmtp" name="platform/external/libmtp" groups="pdk-cw-fs" />
-  <project path="external/libnfc-nci" name="platform/external/libnfc-nci" groups="pdk" />
   <project path="external/libnfc-nxp" name="platform/external/libnfc-nxp" groups="pdk" />
   <project path="external/libnl" name="platform/external/libnl" groups="pdk" />
   <project path="external/libogg" name="platform/external/libogg" groups="pdk" />
@@ -428,7 +434,6 @@
   <project path="packages/apps/Mms" name="platform/packages/apps/Mms" />
   <project path="packages/apps/Music" name="platform/packages/apps/Music" />
   <project path="packages/apps/MusicFX" name="platform/packages/apps/MusicFX" />
-  <project path="packages/apps/Nfc" name="platform/packages/apps/Nfc" />
   <project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer" />
   <project path="packages/apps/PackageInstaller" name="platform/packages/apps/PackageInstaller" />
   <project path="packages/apps/Phone" name="platform/packages/apps/Phone" />
