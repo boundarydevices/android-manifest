@@ -22,6 +22,7 @@
   <project path="external/mxt-app" name="mxt-app" remote="boundary-github" revision="boundary-imx-l5.0.0_1.0.0-ga" />
   <project path="external/mxt-app/src/libusbdroid/code" name="ndyer/libusbdroid" remote="github" revision="master" />
   <project path="frameworks/base" name="android_frameworks_base" remote="boundary-github" revision="boundary-imx-l5.0.0_1.0.0-ga_nxp-nci" />
+  <project path="hardware/imx" name="hardware/imx" remote="boundary-linode" revision="boundary-imx-l5.0.0_1.0.0-ga_cnt" />
   <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="boundary-github" revision="boundary-imx-l5.0.0_1.0.0-ga_nxp-nci" />
 
   <!-- Boundary Devices kernel and U-Boot -->
@@ -41,7 +42,6 @@
   <project path="frameworks/native" name="frameworks_native" remote="boundary-github" revision="boundary-imx-l5.0.0_1.0.0-ga" />
   <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" groups="pdk" remote="boundary-github" revision="boundary-imx-l5.0.0_1.0.0-ga" />
   <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="boundary-github" revision="boundary-imx-l5.0.0_1.0.0-ga" />
-  <project path="hardware/imx" name="hardware/imx" remote="boundary-linode" revision="boundary-imx-l5.0.0_1.0.0-ga" />
   <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="boundary-github" revision="boundary-imx-l5.0.0_1.0.0-ga" />
   <project path="packages/apps/Settings" name="android_packages_apps_settings" remote="boundary-github" revision="boundary-imx-l5.0.0_1.0.0-ga" />
   <project path="system/core" name="android_system_core" remote="boundary-github" revision="boundary-imx-l5.0.0_1.0.0-ga" />
