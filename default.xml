@@ -24,6 +24,7 @@
   <project path="frameworks/base" name="android_frameworks_base" remote="boundary-github" revision="boundary-imx-l5.0.0_1.0.0-ga_nxp-nci" />
   <project path="hardware/imx" name="hardware/imx" remote="boundary-linode" revision="boundary-imx-l5.0.0_1.0.0-ga_cnt" />
   <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="boundary-github" revision="boundary-imx-l5.0.0_1.0.0-ga_nxp-nci" />
+  <project path="packages/apps/PlatformTesting" name="android-tests" remote="boundary-github" revision="platformtesting_cnt" />
 
   <!-- Boundary Devices kernel and U-Boot -->
   <project path="bootable/bootloader/uboot-imx" name="u-boot-imx6" revision="production" remote="boundary-github" />
