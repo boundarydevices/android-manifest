@@ -17,28 +17,34 @@
            sync-j="4" />
 
   <!-- Boundary Devices kernel and U-Boot -->
-  <project path="bootable/bootloader/uboot-imx" name="u-boot-imx6" revision="staging" remote="boundary-github" />
-  <project path="kernel_imx" name="linux-imx6" revision="boundary-imx-l5.1.1_2.0.0-beta" remote="boundary-github" />
+  <project path="bootable/bootloader/uboot-imx" name="u-boot-imx6" revision="boundary-v2015.07" remote="boundary-github" />
+  <project path="kernel_imx" name="linux-imx6" revision="boundary-imx-l5.1.1_2.1.0-ga" remote="boundary-github" />
 
   <!-- Boundary Devices machine layer -->
-  <project path="device/boundary" name="android_device_boundary" remote="boundary-github" revision="boundary-imx-l5.1.1_2.0.0-beta" />
+  <project path="device/boundary" name="android_device_boundary" remote="boundary-github" revision="boundary-imx-l5.1.1_2.1.0-ga" />
 
   <!-- Boundary Devices updates to other components -->
-  <project path="bootable/recovery" name="android_bootable_recovery" remote="boundary-github" revision="boundary-imx-l5.1.1_2.0.0-beta" />
-  <project path="build" name="android_build" remote="boundary-github" revision="boundary-imx-l5.1.1_2.0.0-beta" >
+  <project path="bootable/recovery" name="android_bootable_recovery" remote="boundary-github" revision="boundary-imx-l5.1.1_2.1.0-ga" />
+  <project path="build" name="android_build" remote="boundary-github" revision="boundary-imx-l5.1.1_2.1.0-ga" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="device/fsl" name="device/fsl" remote="boundary-linode" revision="boundary-imx-l5.1.1_2.0.0-beta" />
-  <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="boundary-github" revision="boundary-imx-l5.1.1_2.0.0-beta" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="boundary-github" revision="boundary-imx-l5.1.1_2.0.0-beta" />
-  <project path="frameworks/native" name="frameworks_native" remote="boundary-github" revision="boundary-imx-l5.1.1_2.0.0-beta" />
-  <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" groups="pdk" remote="boundary-github" revision="boundary-imx-l5.1.1_2.0.0-beta" />
-  <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="boundary-github" revision="boundary-imx-l5.1.1_2.0.0-beta" />
-  <project path="hardware/imx" name="hardware/imx" remote="boundary-linode" revision="boundary-imx-l5.1.1_2.0.0-beta" />
-  <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="boundary-github" revision="boundary-imx-l5.1.1_2.0.0-beta" />
-  <project path="packages/apps/Settings" name="android_packages_apps_settings" remote="boundary-github" revision="boundary-imx-l5.1.1_2.0.0-beta" />
-  <project path="system/core" name="android_system_core" remote="boundary-github" revision="boundary-imx-l5.1.1_2.0.0-beta" />
-  <project path="system/extras" name="android-system-extras" remote="boundary-github" revision="boundary-imx-l5.1.1_2.0.0-beta" groups="pdk" />
+  <project path="device/fsl" name="device/fsl" remote="boundary-linode" revision="boundary-imx-l5.1.1_2.1.0-ga" />
+  <project path="external/bluetooth/bluedroid" name="android_external_bluetooth_bluedroid" remote="boundary-github" revision="boundary-imx-l5.1.1_2.1.0-ga" />
+  <project path="external/e2fsprogs" name="cyanogenmod/android_external_e2fsprogs" remote="github" revision="cm-12.1" />
+  <project path="external/exfat" name="cyanogenmod/android_external_exfat" remote="github" revision="cm-12.1" />
+  <project path="external/fuse" name="cyanogenmod/android_external_fuse" remote="github" revision="cm-12.1" />
+  <project path="external/ntfs-3g" name="ntfs-3g" remote="boundary-github" revision="boundary-imx-l5.1.1_2.1.0-ga" />
+  <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="boundary-github" revision="boundary-imx-l5.1.1_2.1.0-ga" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="boundary-github" revision="boundary-imx-l5.1.1_2.1.0-ga" />
+  <project path="frameworks/native" name="frameworks_native" remote="boundary-github" revision="boundary-imx-l5.1.1_2.1.0-ga" />
+  <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" groups="pdk" remote="boundary-github" revision="boundary-imx-l5.1.1_2.1.0-ga" />
+  <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="boundary-github" revision="boundary-imx-l5.1.1_2.1.0-ga" />
+  <project path="hardware/imx" name="hardware/imx" remote="boundary-linode" revision="boundary-imx-l5.1.1_2.1.0-ga" />
+  <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="boundary-github" revision="boundary-imx-l5.1.1_2.1.0-ga" />
+  <project path="packages/apps/Settings" name="android_packages_apps_settings" remote="boundary-github" revision="boundary-imx-l5.1.1_2.1.0-ga" />
+  <project path="system/core" name="android_system_core" remote="boundary-github" revision="boundary-imx-l5.1.1_2.1.0-ga" />
+  <project path="system/extras" name="android-system-extras" remote="boundary-github" revision="boundary-imx-l5.1.1_2.1.0-ga" groups="pdk" />
+  <project path="system/vold" name="android_system_vold" remote="boundary-github" revision="boundary-imx-l5.1.1_2.1.0-ga" />
 
   <!-- projects added by Boundary -->
   <project path="external/can-utils" name="linux-can/can-utils.git" remote="github" revision="master" />
@@ -48,56 +54,58 @@
   <project path="external/koush/Widgets" name="cyanogenmod/Widgets" remote="github" revision="cm-12.0" />
   <project path="external/libtruezip" name="cyanogenmod/android_external_libtruezip" remote="github" revision="stable/cm-12.0-YNG3C" />
   <project path="hardware/ti/wlan" name="cyanogenmod/android_hardware_ti_wlan"  remote="github" revision="stable/cm-12.0-YNG3C" />
-  <project path="hardware/ti/wpan" name="android_hardware_ti_wpan" remote="boundary-github" revision="boundary-imx-l5.1.1_2.0.0-beta" />
+  <project path="hardware/ti/wpan" name="android_hardware_ti_wpan" remote="boundary-github" revision="boundary-imx-l5.1.1_2.1.0-ga" />
+  <project path="packages/apps/BoundaryDemo" name="OkienkaTest" remote="boundary-github" revision="master" />
   <project path="packages/apps/CMFileManager" name="cyanogenmod/android_packages_apps_CMFileManager" remote="github" revision="stable/cm-12.0-YNG3C" />
 
   <!-- projects added by Freescale -->
-  <project path="device/fsl-codec" name="device/fsl-codec" remote="boundary-linode" revision="imx-l5.1.1_2.0.0-beta" />
-  <project path="device/fsl-proprietary" name="device/fsl-proprietary" remote="boundary-linode" revision="imx-l5.1.1_2.0.0-beta" />
-  <project path="external/busybox" name="android-busybox" remote="boundary-github" revision="imx-l5.1.1_2.0.0-beta" />
-  <project path="external/fsl_aacp_dec" name="external/fsl_aacp_dec" remote="boundary-linode" revision="imx-l5.1.1_2.0.0-beta" />
-  <project path="external/fsl_imx_omx" name="external/fsl_imx_omx" remote="boundary-linode" revision="imx-l5.1.1_2.0.0-beta" />
-  <project path="external/fsl_vpu_omx" name="external/fsl_vpu_omx" remote="boundary-linode" revision="imx-l5.1.1_2.0.0-beta" />
-  <project path="external/linux-firmware-imx" name="external/linux-firmware-imx" remote="boundary-linode" revision="imx-l5.1.1_2.0.0-beta" />
-  <project path="external/linux-lib" name="android_external_linux-lib" remote="boundary-github" revision="imx-l5.1.1_2.0.0-beta" />
-  <project path="external/linux-test" name="imx-linux-test" remote="boundary-github" revision="imx-l5.1.1_2.0.0-beta" />
-  <project path="external/mtd-utils" name="android_external_mtd-utils" remote="boundary-github" revision="imx-l5.1.1_2.0.0-beta" />
-  <project path="external/ntfs-3g" name="ntfs-3g" remote="boundary-github" revision="imx-l5.1.1_2.0.0-beta" />
-  <project path="external/powerdebug" name="powerdebug" remote="boundary-github" revision="imx-l5.1.1_2.0.0-beta" />
-  <project path="external/wfd-proprietary" name="wfd-proprietary" remote="boundary-linode" revision="imx-l5.1.1_2.0.0-beta" />
-  <project path="hardware/realtek" name="android_hardware_realtek" remote="boundary-github" revision="imx-l5.1.1_2.0.0-beta" />
-  <project path="packages/apps/fsl_imx_demo" name="fsl_imx_demo" remote="boundary-github" revision="imx-l5.1.1_2.0.0-beta" />
+  <project path="device/fsl-codec" name="device/fsl-codec" remote="boundary-linode" revision="imx-l5.1.1_2.1.0-ga" />
+  <project path="device/fsl-proprietary" name="device/fsl-proprietary" remote="boundary-linode" revision="imx-l5.1.1_2.1.0-ga" />
+  <project path="external/busybox" name="android-busybox" remote="boundary-github" revision="imx-l5.1.1_2.1.0-ga" />
+  <project path="external/fsl_aacp_dec" name="external/fsl_aacp_dec" remote="boundary-linode" revision="imx-l5.1.1_2.1.0-ga" />
+  <project path="external/fsl_imx_omx" name="external/fsl_imx_omx" remote="boundary-linode" revision="imx-l5.1.1_2.1.0-ga" />
+  <project path="external/fsl_vpu_omx" name="external/fsl_vpu_omx" remote="boundary-linode" revision="imx-l5.1.1_2.1.0-ga" />
+  <project path="external/linux-firmware-imx" name="external/linux-firmware-imx" remote="boundary-linode" revision="imx-l5.1.1_2.1.0-ga" />
+  <project path="external/linux-lib" name="android_external_linux-lib" remote="boundary-github" revision="imx-l5.1.1_2.1.0-ga" />
+  <project path="external/linux-test" name="imx-linux-test" remote="boundary-github" revision="imx-l5.1.1_2.1.0-ga" />
+  <project path="external/mtd-utils" name="android_external_mtd-utils" remote="boundary-github" revision="imx-l5.1.1_2.1.0-ga" />
+  <project path="external/powerdebug" name="powerdebug" remote="boundary-github" revision="imx-l5.1.1_2.1.0-ga" />
+  <project path="external/wfd-proprietary" name="wfd-proprietary" remote="boundary-linode" revision="imx-l5.1.1_2.1.0-ga" />
+  <project path="hardware/realtek" name="android_hardware_realtek" remote="boundary-github" revision="imx-l5.1.1_2.1.0-ga" />
+  <project path="packages/apps/fsl_imx_demo" name="fsl_imx_demo" remote="boundary-github" revision="imx-l5.1.1_2.1.0-ga" />
 
   <!-- projects changed by Freescale -->
-  <project path="bionic" name="android_bionic" remote="boundary-github" revision="imx-l5.1.1_2.0.0-beta" />
-  <project path="dalvik" name="android_dalvik" remote="boundary-github" revision="imx-l5.1.1_2.0.0-beta" />
-  <project path="external/bluetooth/bluedroid" name="android_external_bluetooth_bluedroid" remote="boundary-github" revision="imx-l5.1.1_2.0.0-beta" />
-  <project path="external/dnsmasq" name="android_external_dnsmasq" remote="boundary-github" revision="imx-l5.1.1_2.0.0-beta" />
-  <project path="external/kernel-headers" name="android_external_kernel-headers" remote="boundary-github" revision="imx-l5.1.1_2.0.0-beta" />
-  <project path="external/libselinux" name="android_external_libselinux" remote="boundary-github" revision="imx-l5.1.1_2.0.0-beta" />
-  <project path="external/linux-tools-perf" name="android_external_linux-tools-perf" remote="boundary-github" revision="imx-l5.1.1_2.0.0-beta" />
-  <project path="external/ppp" name="android_external_ppp" remote="boundary-github" revision="imx-l5.1.1_2.0.0-beta" />
-  <project path="external/skia" name="skia" remote="boundary-github" revision="imx-l5.1.1_2.0.0-beta" />
-  <project path="external/tinyalsa" name="tinyalsa" remote="boundary-github" revision="imx-l5.1.1_2.0.0-beta" />
-  <project path="frameworks/av" name="frameworks_av" remote="boundary-github" revision="imx-l5.1.1_2.0.0-beta" />
-  <project path="frameworks/opt/net/ethernet" name="android_frameworks_opt_net_ethernet" remote="boundary-github" revision="imx-l5.1.1_2.0.0-beta" />
-  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="boundary-github" revision="imx-l5.1.1_2.0.0-beta" />
-  <project path="frameworks/webview" name="android_frameworks_webview" remote="boundary-github" revision="imx-l5.1.1_2.0.0-beta" />
-  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="boundary-github" revision="imx-l5.1.1_2.0.0-beta" />
-  <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" remote="boundary-github" revision="imx-l5.1.1_2.0.0-beta" />
-  <project path="hardware/ril" name="android_hardware_ril" remote="boundary-github" revision="imx-l5.1.1_2.0.0-beta" />
-  <project path="libcore" name="android_libcore" remote="boundary-github" revision="imx-l5.1.1_2.0.0-beta" />
-  <project path="packages/apps/Browser" name="android_browser" remote="boundary-github" revision="imx-l5.1.1_2.0.0-beta" />
-  <project path="packages/apps/Email" name="android_packages_apps_Email" remote="boundary-github" revision="imx-l5.1.1_2.0.0-beta" />
-  <project path="packages/apps/Camera2" name="android_packages_apps_Camera2" remote="boundary-github" revision="imx-l5.1.1_2.0.0-beta" />
-  <project path="packages/apps/Gallery" name="android_packages_apps_Gallery" remote="boundary-github" revision="imx-l5.1.1_2.0.0-beta" />
-  <project path="packages/apps/Gallery2" name="android_app_Gallery2" remote="boundary-github" revision="imx-l5.1.1_2.0.0-beta" />
-  <project path="packages/apps/Launcher2" name="android_packages_apps_Launcher2" remote="boundary-github" revision="imx-l5.1.1_2.0.0-beta" />
-  <project path="packages/apps/LegacyCamera" name="LegacyCamera" remote="boundary-github" revision="imx-l5.1.1_2.0.0-beta" />
-  <project path="packages/apps/SoundRecorder" name="android_packages_apps_soundrecorder" remote="boundary-github" revision="imx-l5.1.1_2.0.0-beta" />
+  <project path="bionic" name="android_bionic" remote="boundary-github" revision="imx-l5.1.1_2.1.0-ga" />
+  <project path="dalvik" name="android_dalvik" remote="boundary-github" revision="imx-l5.1.1_2.1.0-ga" />
+  <project path="external/aac" name="android_external_aac" remote="boundary-github" revision="imx-l5.1.1_2.1.0-ga" />
+  <project path="external/dnsmasq" name="android_external_dnsmasq" remote="boundary-github" revision="imx-l5.1.1_2.1.0-ga" />
+  <project path="external/kernel-headers" name="android_external_kernel-headers" remote="boundary-github" revision="imx-l5.1.1_2.1.0-ga" />
+  <project path="external/libpng" name="android_external_libpng" remote="boundary-github" revision="imx-l5.1.1_2.1.0-ga" />
+  <project path="external/libselinux" name="android_external_libselinux" remote="boundary-github" revision="imx-l5.1.1_2.1.0-ga" />
+  <project path="external/linux-tools-perf" name="android_external_linux-tools-perf" remote="boundary-github" revision="imx-l5.1.1_2.1.0-ga" />
+  <project path="external/ppp" name="android_external_ppp" remote="boundary-github" revision="imx-l5.1.1_2.1.0-ga" />
+  <project path="external/skia" name="skia" remote="boundary-github" revision="imx-l5.1.1_2.1.0-ga" />
+  <project path="external/sonivox" name="android_external_sonivox" remote="boundary-github" revision="imx-l5.1.1_2.1.0-ga" />
+  <project path="external/tinyalsa" name="tinyalsa" remote="boundary-github" revision="imx-l5.1.1_2.1.0-ga" />
+  <project path="external/tremolo" name="android_external_tremolo" remote="boundary-github" revision="imx-l5.1.1_2.1.0-ga" />
+  <project path="frameworks/av" name="frameworks_av" remote="boundary-github" revision="imx-l5.1.1_2.1.0-ga" />
+  <project path="frameworks/opt/net/ethernet" name="android_frameworks_opt_net_ethernet" remote="boundary-github" revision="imx-l5.1.1_2.1.0-ga" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="boundary-github" revision="imx-l5.1.1_2.1.0-ga" />
+  <project path="frameworks/webview" name="android_frameworks_webview" remote="boundary-github" revision="imx-l5.1.1_2.1.0-ga" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="boundary-github" revision="imx-l5.1.1_2.1.0-ga" />
+  <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" remote="boundary-github" revision="imx-l5.1.1_2.1.0-ga" />
+  <project path="hardware/ril" name="android_hardware_ril" remote="boundary-github" revision="imx-l5.1.1_2.1.0-ga" />
+  <project path="libcore" name="android_libcore" remote="boundary-github" revision="imx-l5.1.1_2.1.0-ga" />
+  <project path="packages/apps/Browser" name="android_browser" remote="boundary-github" revision="imx-l5.1.1_2.1.0-ga" />
+  <project path="packages/apps/Email" name="android_packages_apps_Email" remote="boundary-github" revision="imx-l5.1.1_2.1.0-ga" />
+  <project path="packages/apps/Camera2" name="android_packages_apps_Camera2" remote="boundary-github" revision="imx-l5.1.1_2.1.0-ga" />
+  <project path="packages/apps/Gallery" name="android_packages_apps_Gallery" remote="boundary-github" revision="imx-l5.1.1_2.1.0-ga" />
+  <project path="packages/apps/Gallery2" name="android_app_Gallery2" remote="boundary-github" revision="imx-l5.1.1_2.1.0-ga" />
+  <project path="packages/apps/Launcher2" name="android_packages_apps_Launcher2" remote="boundary-github" revision="imx-l5.1.1_2.1.0-ga" />
+  <project path="packages/apps/LegacyCamera" name="LegacyCamera" remote="boundary-github" revision="imx-l5.1.1_2.1.0-ga" />
+  <project path="packages/apps/SoundRecorder" name="android_packages_apps_soundrecorder" remote="boundary-github" revision="imx-l5.1.1_2.1.0-ga" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.6" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6" revision="refs/tags/android-4.4.3_r1" />
-  <project path="system/netd" name="android_system_netd" remote="boundary-github" revision="imx-l5.1.1_2.0.0-beta" />
-  <project path="system/vold" name="android_system_vold" remote="boundary-github" revision="imx-l5.1.1_2.0.0-beta" />
+  <project path="system/netd" name="android_system_netd" remote="boundary-github" revision="imx-l5.1.1_2.1.0-ga" />
 
   <!-- Unchanged AOSP projects -->
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
@@ -128,7 +136,6 @@
   <project path="device/google/atv" name="device/google/atv" groups="device,fugu" />
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs" />
-  <project path="external/aac" name="platform/external/aac" groups="pdk" />
   <project path="external/android-clat" name="platform/external/android-clat" groups="pdk-cw-fs" />
   <project path="external/ant-glob" name="platform/external/ant-glob" groups="pdk-cw-fs" />
   <project path="external/antlr" name="platform/external/antlr" groups="pdk-cw-fs,tradefed" />
@@ -187,7 +194,6 @@
   <project path="external/dhcpcd" name="platform/external/dhcpcd" groups="pdk-cw-fs" />
   <project path="external/doclava" name="platform/external/doclava" groups="pdk-cw-fs,tradefed" />
   <project path="external/droiddriver" name="platform/external/droiddriver" groups="pdk-cw-fs" />
-  <project path="external/e2fsprogs" name="platform/external/e2fsprogs" groups="pdk" />
   <project path="external/easymock" name="platform/external/easymock" groups="pdk-cw-fs,tradefed" />
   <project path="external/eclipse-basebuilder" name="platform/external/eclipse-basebuilder" groups="pdk-cw-fs" />
   <project path="external/eclipse-windowbuilder" name="platform/external/eclipse-windowbuilder" groups="pdk-cw-fs" />
@@ -255,7 +261,6 @@
   <project path="external/libopus" name="platform/external/libopus" groups="pdk" />
   <project path="external/libpcap" name="platform/external/libpcap" groups="pdk,pdk-cw-fs" />
   <project path="external/libphonenumber" name="platform/external/libphonenumber" groups="pdk-cw-fs" />
-  <project path="external/libpng" name="platform/external/libpng" groups="pdk" />
   <project path="external/libseccomp-helper" name="platform/external/libseccomp-helper" groups="pdk-cw-fs" />
   <project path="external/libsepol" name="platform/external/libsepol" groups="pdk" />
   <project path="external/libssh2" name="platform/external/libssh2" groups="pdk-cw-fs" />
@@ -318,7 +323,6 @@
   <project path="external/sfntly" name="platform/external/sfntly" groups="pdk-cw-fs,qcom_msm8x26" />
   <project path="external/smack" name="platform/external/smack" groups="pdk-cw-fs" />
   <project path="external/smali" name="platform/external/smali" groups="pdk-cw-fs" />
-  <project path="external/sonivox" name="platform/external/sonivox" groups="pdk" />
   <project path="external/speex" name="platform/external/speex" groups="pdk" />
   <project path="external/sqlite" name="platform/external/sqlite" groups="pdk" />
   <project path="external/srec" name="platform/external/srec" groups="pdk-cw-fs" />
@@ -333,7 +337,6 @@
   <project path="external/tinycompress" name="platform/external/tinycompress" groups="pdk" />
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" />
   <project path="external/tinyxml2" name="platform/external/tinyxml2" groups="pdk" />
-  <project path="external/tremolo" name="platform/external/tremolo" groups="pdk" />
   <project path="external/valgrind" name="platform/external/valgrind" groups="pdk" />
   <project path="external/vixl" name="platform/external/vixl" groups="pdk" />
   <project path="external/webp" name="platform/external/webp" groups="pdk-cw-fs,qcom_msm8x26" />
