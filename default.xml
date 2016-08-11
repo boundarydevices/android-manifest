@@ -51,7 +51,7 @@
   <project path="external/i2c-tools" name="suapapa/i2c-tools" remote="github" revision="android" />
   <project path="external/libtruezip" name="cyanogenmod/android_external_libtruezip" remote="github" revision="stable/cm-13.0-ZNH2K" />
   <project path="external/uicommon" name="cyanogenmod/android_external_cyanogen_uicommon" remote="github" revision="stable/cm-13.0-ZNH2K" />
-  <project path="hardware/ti/wlan" name="cyanogenmod/android_hardware_ti_wlan"  remote="github" revision="stable/cm-13.0-ZNH2K" />
+  <project path="hardware/ti/wlan" name="cyanogenmod/android_hardware_ti_wlan"  remote="github" revision="stable/cm-13.0-ZNH5Y" />
   <project path="hardware/ti/wpan" name="android_hardware_ti_wpan" remote="boundary-github" revision="boundary-imx-m6.0.1_1.0.0-ga" />
   <project path="packages/apps/BoundaryDemo" name="OkienkaTest" remote="boundary-github" revision="master" />
   <project path="packages/apps/CMFileManager" name="cyanogenmod/android_packages_apps_CMFileManager" remote="github" revision="stable/cm-13.0-ZNH2K" />
