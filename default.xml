@@ -17,11 +17,11 @@
            sync-j="4" />
 
   <!-- Boundary Devices kernel and U-Boot -->
-  <project path="kernel_imx" name="linux-imx6" revision="boundary-imx-kk4.4.3_2.0.0-ga" remote="boundary-github" />
-  <project path="bootable/bootloader/uboot-imx" name="u-boot-imx6" revision="production" remote="boundary-github" />
+  <project path="kernel_imx" name="linux-imx6" revision="boundary-imx-kk4.4.3_2.0.1-ga" remote="boundary-github" />
+  <project path="bootable/bootloader/uboot-imx" name="u-boot-imx6" revision="boundary-v2016.03" remote="boundary-github" />
 
   <!-- Boundary Devices machine layer -->
-  <project path="device/boundary" name="android_device_boundary" remote="boundary-github" revision="boundary-imx-kk4.4.3_2.0.0-ga" />
+  <project path="device/boundary" name="android_device_boundary" remote="boundary-github" revision="boundary-imx-kk4.4.3_2.0.1-ga" />
 
   <!-- Boundary Devices updates to other components -->
   <project path="bootable/recovery" name="android_bootable_recovery" remote="boundary-github" revision="boundary-imx-kk4.4.3_2.0.0-ga" />
@@ -30,8 +30,8 @@
   </project>
   <project path="device/fsl" name="device/fsl" remote="boundary-linode" revision="boundary-imx-kk4.4.3_2.0.0-ga" />
   <project path="frameworks/base" name="android_frameworks_base" remote="boundary-github" revision="boundary-imx-kk4.4.3_2.0.0-ga" />
-  <project path="frameworks/native" name="frameworks_native" remote="boundary-github" revision="boundary-imx-kk4.4.3_2.0.0-ga" />
-  <project path="hardware/imx" name="hardware/imx" remote="boundary-linode" revision="boundary-imx-kk4.4.3_2.0.0-ga" />
+  <project path="frameworks/native" name="frameworks_native" remote="boundary-github" revision="boundary-imx-kk4.4.3_2.0.1-ga" />
+  <project path="hardware/imx" name="hardware/imx" remote="boundary-linode" revision="boundary-imx-kk4.4.3_2.0.1-ga" />
   <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" groups="pdk" remote="boundary-github" revision="boundary-imx-kk4.4.3_2.0.0-ga" />
   <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="boundary-github" revision="boundary-imx-kk4.4.3_2.0.0-ga" />
   <project path="hardware/ti/wpan" name="android_hardware_ti_wpan" remote="boundary-github" revision="boundary-imx-kk4.4.3_2.0.0-ga" />
@@ -51,13 +51,13 @@
 
   <!-- projects added by Freescale -->
   <project path="device/fsl-codec" name="device/fsl-codec" remote="boundary-linode" revision="imx-kk4.4.3_2.0.0-ga" />
-  <project path="device/fsl-proprietary" name="device/fsl-proprietary" remote="boundary-linode" revision="imx-kk4.4.3_2.0.0-ga" />
+  <project path="device/fsl-proprietary" name="device/fsl-proprietary" remote="boundary-linode" revision="imx-kk4.4.3_2.0.1-ga" />
   <project path="external/busybox" name="android-busybox" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="external/fsl_aacp_dec" name="external/fsl_aacp_dec" remote="boundary-linode" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="external/fsl_imx_omx" name="external/fsl_imx_omx" remote="boundary-linode" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="external/fsl_vpu_omx" name="external/fsl_vpu_omx" remote="boundary-linode" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="external/linux-firmware-imx" name="external/linux-firmware-imx" remote="boundary-linode" revision="imx-kk4.4.3_2.0.0-ga" />
-  <project path="external/linux-lib" name="android_external_linux-lib" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
+  <project path="external/linux-lib" name="android_external_linux-lib" remote="boundary-github" revision="imx-kk4.4.3_2.0.1-ga" />
   <project path="external/linux-test" name="imx-linux-test" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="external/mtd-utils" name="android_external_mtd-utils" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
   <project path="external/ntfs-3g" name="ntfs-3g" remote="boundary-github" revision="imx-kk4.4.3_2.0.0-ga" />
