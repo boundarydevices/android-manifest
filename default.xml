@@ -41,6 +41,7 @@
   <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="boundary-github" revision="boundary-imx-m6.0.1_1.0.0-ga" />
   <project path="hardware/imx" name="android_hardware_imx" remote="boundary-github" revision="boundary-imx-m6.0.1_1.0.0-ga" />
   <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="boundary-github" revision="boundary-imx-m6.0.1_1.0.0-ga" />
+  <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" remote="boundary-github" revision="boundary-imx-m6.0.1_1.0.0-ga" />
   <project path="system/bt" name="android_system_bt" remote="boundary-github" revision="boundary-imx-m6.0.1_1.0.0-ga" />
   <project path="system/core" name="android_system_core" remote="boundary-github" revision="boundary-imx-m6.0.1_1.0.0-ga" />
   <project path="system/netd" name="android_system_netd" remote="boundary-github" revision="boundary-imx-m6.0.1_1.0.0-ga" />
@@ -51,6 +52,8 @@
   <project path="external/devregs" name="devregs" remote="boundary-github" revision="master" />
   <project path="external/i2c-tools" name="suapapa/i2c-tools" remote="github" revision="android" />
   <project path="external/libtruezip" name="cyanogenmod/android_external_libtruezip" remote="github" revision="stable/cm-13.0-ZNH2K" />
+  <project path="external/qcacld-2.0" name="qcacld-2.0" remote="boundary-github" revision="boundary-LNX.LEH.4.2.2.2-4.5.20.034" />
+  <project path="external/qca-firmware" name="qca-firmware" remote="boundary-linode" revision="master" />
   <project path="external/uicommon" name="cyanogenmod/android_external_cyanogen_uicommon" remote="github" revision="stable/cm-13.0-ZNH2K" />
   <project path="hardware/ti/wlan" name="cyanogenmod/android_hardware_ti_wlan"  remote="github" revision="stable/cm-13.0-ZNH5Y" />
   <project path="hardware/ti/wpan" name="android_hardware_ti_wpan" remote="boundary-github" revision="boundary-imx-m6.0.1_1.0.0-ga" />
@@ -380,7 +383,6 @@
   <project path="hardware/mediatek" name="platform/hardware/mediatek" groups="mediatek,mediatek_wear" />
   <project path="hardware/nvidia/audio" name="platform/hardware/nvidia/audio" groups="nvidia_audio" />
   <project path="hardware/qcom/audio" name="platform/hardware/qcom/audio" groups="qcom,qcom_audio" />
-  <project path="hardware/qcom/bt" name="platform/hardware/qcom/bt" groups="qcom" />
   <project path="hardware/qcom/camera" name="platform/hardware/qcom/camera" groups="qcom" />
   <project path="hardware/qcom/display" name="platform/hardware/qcom/display" groups="pdk,qcom,qcom_display" />
   <project path="hardware/qcom/gps" name="platform/hardware/qcom/gps" groups="qcom,qcom_gps" />
