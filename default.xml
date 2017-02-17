@@ -44,6 +44,7 @@
   <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" remote="boundary-github" revision="boundary-imx-m6.0.1_1.0.0-ga" />
   <project path="system/bt" name="android_system_bt" remote="boundary-github" revision="boundary-imx-m6.0.1_1.0.0-ga" />
   <project path="system/core" name="android_system_core" remote="boundary-github" revision="boundary-imx-m6.0.1_1.0.0-ga" />
+  <project path="system/extras" name="android-system-extras" remote="boundary-github" revision="boundary-imx-m6.0.1_1.0.0-ga" groups="pdk" />
   <project path="system/netd" name="android_system_netd" remote="boundary-github" revision="boundary-imx-m6.0.1_1.0.0-ga" />
   <project path="system/vold" name="android_system_vold" remote="boundary-github" revision="boundary-imx-m6.0.1_1.0.0-ga" />
 
@@ -99,7 +100,6 @@
   <project path="packages/apps/LegacyCamera" name="LegacyCamera" remote="boundary-github" revision="imx-m6.0.1_1.0.0-ga" />
   <project path="packages/apps/Settings" name="android_packages_apps_settings" remote="boundary-github" revision="imx-m6.0.1_1.0.0-ga" />
   <project path="packages/apps/SoundRecorder" name="android_packages_apps_soundrecorder" remote="boundary-github" revision="imx-m6.0.1_1.0.0-ga" />
-  <project path="system/extras" name="android-system-extras" remote="boundary-github" revision="imx-m6.0.1_1.0.0-ga" groups="pdk" />
   <project path="system/media" name="android_system_media" remote="boundary-github" revision="imx-m6.0.1_1.0.0-ga" />
 
   <!-- Unchanged AOSP projects -->
