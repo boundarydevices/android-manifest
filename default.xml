@@ -30,6 +30,7 @@
   </project>
   <project path="device/fsl" name="device/fsl" remote="boundary-linode" revision="boundary-imx-n7.1.1_1.0.0-ga" />
   <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
+  <project path="frameworks/av" name="frameworks_av" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
   <project path="frameworks/base" name="android_frameworks_base" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
   <project path="frameworks/native" name="frameworks_native" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
   <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
@@ -76,7 +77,6 @@
   <project path="external/dnsmasq" name="android_external_dnsmasq" remote="boundary-github" revision="imx-n7.1.1_1.0.0-ga" />
   <project path="external/skia" name="skia" remote="boundary-github" revision="imx-n7.1.1_1.0.0-ga" />
   <project path="external/tinyalsa" name="tinyalsa" remote="boundary-github" revision="imx-n7.1.1_1.0.0-ga" />
-  <project path="frameworks/av" name="frameworks_av" remote="boundary-github" revision="imx-n7.1.1_1.0.0-ga" />
   <project path="frameworks/ex" name="android_frameworks_ex" remote="boundary-github" revision="imx-n7.1.1_1.0.0-ga" />
   <project path="frameworks/opt/net/ethernet" name="android_frameworks_opt_net_ethernet" remote="boundary-github" revision="imx-n7.1.1_1.0.0-ga" />
   <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="boundary-github" revision="imx-n7.1.1_1.0.0-ga" />
