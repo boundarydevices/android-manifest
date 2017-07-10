@@ -37,6 +37,7 @@
   <project path="hardware/imx" name="android_hardware_imx" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
   <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
   <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
+  <project path="packages/apps/Camera2" name="android_packages_apps_Camera2" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
   <project path="system/bt" name="android_system_bt" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
   <project path="system/core" name="android_system_core" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
   <project path="system/extras" name="android-system-extras" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" groups="pdk" />
@@ -84,7 +85,6 @@
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="boundary-github" revision="imx-n7.1.1_1.0.0-ga" />
   <project path="libcore" name="android_libcore" remote="boundary-github" revision="imx-n7.1.1_1.0.0-ga" />
   <project path="packages/apps/Browser2" name="android_packages_apps_Browser2" remote="boundary-github" revision="imx-n7.1.1_1.0.0-ga" />
-  <project path="packages/apps/Camera2" name="android_packages_apps_Camera2" remote="boundary-github" revision="imx-n7.1.1_1.0.0-ga" />
   <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" remote="boundary-github" revision="imx-n7.1.1_1.0.0-ga" />
   <project path="packages/apps/DeskClock" name="android_packages_apps_DeskClock" remote="boundary-github" revision="imx-n7.1.1_1.0.0-ga" />
   <project path="packages/apps/Email" name="android_packages_apps_Email" remote="boundary-github" revision="imx-n7.1.1_1.0.0-ga" />
