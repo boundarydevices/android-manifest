@@ -54,7 +54,7 @@
   <project path="external/i2c-tools" name="suapapa/i2c-tools" remote="github" revision="android" />
   <project path="external/libtruezip" name="lineageos/android_external_libtruezip" remote="github" revision="cm-14.1" />
   <project path="external/ntfs-3g" name="lineageos/android_external_ntfs-3g" remote="github" revision="cm-14.1" />
-  <project path="external/qcacld-2.0" name="qcacld-2.0" remote="boundary-github" revision="boundary-LNX.LEH.4.2.2.2-4.5.20.034" />
+  <project path="external/qcacld-2.0" name="qcacld-2.0" remote="boundary-github" revision="boundary-LNX.LEH.4.2.2.2" />
   <project path="external/qca-firmware" name="qca-firmware" remote="boundary-linode" revision="master" />
   <project path="external/uicommon" name="lineageos/android_external_cyanogen_uicommon" remote="github" revision="cm-14.1" />
   <project path="hardware/ti/wlan" name="lineageos/android_hardware_ti_wlan"  remote="github" revision="cm-14.1" />
