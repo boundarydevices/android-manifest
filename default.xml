@@ -40,6 +40,7 @@
   <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
   <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
   <project path="packages/apps/Camera2" name="android_packages_apps_Camera2" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
+  <project path="packages/apps/fsl_imx_demo" name="fsl_imx_demo" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
   <project path="system/bt" name="android_system_bt" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
   <project path="system/core" name="android_system_core" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" />
   <project path="system/extras" name="android-system-extras" remote="boundary-github" revision="boundary-imx-n7.1.1_1.0.0-ga" groups="pdk" />
@@ -73,7 +74,6 @@
   <project path="external/linux-firmware-imx" name="external/linux-firmware-imx" remote="boundary-linode" revision="imx-n7.1.1_1.0.0-ga" />
   <project path="external/linux-lib" name="android_external_linux-lib" remote="boundary-github" revision="imx-n7.1.1_1.0.0-ga" />
   <project path="external/mtd-utils" name="android_external_mtd-utils" remote="boundary-github" revision="imx-n7.1.1_1.0.0-ga" />
-  <project path="packages/apps/fsl_imx_demo" name="fsl_imx_demo" remote="boundary-github" revision="imx-n7.1.1_1.0.0-ga" />
 
   <!-- projects changed by Freescale -->
   <project path="bionic" name="android_bionic" remote="boundary-github" revision="imx-n7.1.1_1.0.0-ga" />
