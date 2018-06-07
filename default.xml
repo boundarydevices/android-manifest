@@ -4,7 +4,7 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com/"
            review="https://android-review.googlesource.com/" />
-  <remote  name="android-imx"
+  <remote  name="codeaurora-imx"
            fetch="https://source.codeaurora.org/external/imx/" />
   <remote  name="boundary-github"
            fetch="https://github.com/boundarydevices/" />
@@ -61,26 +61,26 @@
   <project path="vendor/nxp" name="vendor/nxp" remote="boundary-linode" revision="imx-o8.1.0_1.3.0_8m-ga" />
 
   <!-- Public i.MX repositories -->
-  <project path="bootable/recovery" name="aosp/platform/bootable/recovery" groups="pdk" remote="android-imx" revision="refs/tags/o8.1.0_1.3.0_8m-ga"/>
-  <project path="build/soong" name="aosp/platform/build/soong" groups="pdk,tradefed" remote="android-imx" revision="refs/tags/o8.1.0_1.3.0_8m-ga">
+  <project path="bootable/recovery" name="aosp/platform/bootable/recovery" groups="pdk" remote="codeaurora-imx" revision="refs/tags/o8.1.0_1.3.0_8m-ga"/>
+  <project path="build/soong" name="aosp/platform/build/soong" groups="pdk,tradefed" remote="codeaurora-imx" revision="refs/tags/o8.1.0_1.3.0_8m-ga">
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-  <project path="external/avb" name="platform/external/avb" groups="pdk" remote="android-imx" revision="refs/tags/o8.1.0_1.3.0_8m-ga" />
-  <project path="external/libdrm" name="platform/external/libdrm" groups="pdk" remote="android-imx" revision="refs/tags/o8.1.0_1.3.0_8m-ga" />
-  <project path="external/tinyalsa" name="aosp/platform/external/tinyalsa" groups="pdk" remote="android-imx" revision="refs/tags/o8.1.0_1.3.0_8m-ga"/>
-  <project path="hardware/interfaces" name="platform/hardware/interfaces" groups="pdk" remote="android-imx" revision="refs/tags/o8.1.0_1.3.0_8m-ga" />
-  <project path="packages/apps/DeskClock" name="aosp/platform/packages/apps/DeskClock" groups="pdk-fs" remote="android-imx" revision="refs/tags/o8.1.0_1.3.0_8m-ga"/>
-  <project path="packages/apps/Gallery2" name="aosp/platform/packages/apps/Gallery2" groups="pdk-fs" remote="android-imx" revision="refs/tags/o8.1.0_1.3.0_8m-ga"/>
-  <project path="packages/apps/LegacyCamera" name="aosp/platform/packages/apps/LegacyCamera" groups="pdk-fs" remote="android-imx" revision="refs/tags/o8.1.0_1.3.0_8m-ga" />
-  <project path="packages/apps/Music" name="aosp/platform/packages/apps/Music" groups="pdk-fs" remote="android-imx" revision="refs/tags/o8.1.0_1.3.0_8m-ga" />
-  <project path="packages/apps/SoundRecorder" name="aosp/platform/packages/apps/SoundRecorder" groups="pdk-fs" remote="android-imx" revision="refs/tags/o8.1.0_1.3.0_8m-ga" />
-  <project path="packages/inputmethods/LatinIME" name="aosp/platform/packages/inputmethods/LatinIME" groups="pdk-fs" remote="android-imx" revision="refs/tags/o8.1.0_1.3.0_8m-ga"/>
-  <project path="packages/services/Car" name="platform/packages/services/Car" groups="pdk-cw-fs,pdk-fs" remote="android-imx" revision="refs/tags/o8.1.0_1.3.0_8m-ga"/>
-  <project path="system/connectivity/wificond" name="platform/system/connectivity/wificond" groups="pdk" remote="android-imx" revision="refs/tags/o8.1.0_1.3.0_8m-ga" />
-  <project path="system/tools/bpt" name="aosp/platform/system/tools/bpt" groups="pdk" remote="android-imx" revision="refs/tags/o8.1.0_1.3.0_8m-ga"/>
-  <project path="system/sepolicy" name="platform/system/sepolicy" groups="pdk" remote="android-imx" revision="refs/tags/o8.1.0_1.3.0_8m-ga"/>
-  <project path="vendor/nxp-opensource/imx-lib" name="imx-lib" remote="android-imx" revision="refs/tags/o8.1.0_1.3.0_8m-ga" />
+  <project path="external/avb" name="aosp/platform/external/avb" groups="pdk" remote="codeaurora-imx" revision="refs/tags/o8.1.0_1.3.0_8m-ga" />
+  <project path="external/libdrm" name="aosp/platform/external/libdrm" groups="pdk" remote="codeaurora-imx" revision="refs/tags/o8.1.0_1.3.0_8m-ga" />
+  <project path="external/tinyalsa" name="aosp/platform/external/tinyalsa" groups="pdk" remote="codeaurora-imx" revision="refs/tags/o8.1.0_1.3.0_8m-ga"/>
+  <project path="hardware/interfaces" name="aosp/platform/hardware/interfaces" groups="pdk" remote="codeaurora-imx" revision="refs/tags/o8.1.0_1.3.0_8m-ga" />
+  <project path="packages/apps/DeskClock" name="aosp/platform/packages/apps/DeskClock" groups="pdk-fs" remote="codeaurora-imx" revision="refs/tags/o8.1.0_1.3.0_8m-ga"/>
+  <project path="packages/apps/Gallery2" name="aosp/platform/packages/apps/Gallery2" groups="pdk-fs" remote="codeaurora-imx" revision="refs/tags/o8.1.0_1.3.0_8m-ga"/>
+  <project path="packages/apps/LegacyCamera" name="aosp/platform/packages/apps/LegacyCamera" groups="pdk-fs" remote="codeaurora-imx" revision="refs/tags/o8.1.0_1.3.0_8m-ga" />
+  <project path="packages/apps/Music" name="aosp/platform/packages/apps/Music" groups="pdk-fs" remote="codeaurora-imx" revision="refs/tags/o8.1.0_1.3.0_8m-ga" />
+  <project path="packages/apps/SoundRecorder" name="aosp/platform/packages/apps/SoundRecorder" groups="pdk-fs" remote="codeaurora-imx" revision="refs/tags/o8.1.0_1.3.0_8m-ga" />
+  <project path="packages/inputmethods/LatinIME" name="aosp/platform/packages/inputmethods/LatinIME" groups="pdk-fs" remote="codeaurora-imx" revision="refs/tags/o8.1.0_1.3.0_8m-ga"/>
+  <project path="packages/services/Car" name="aosp/platform/packages/services/Car" groups="pdk-cw-fs,pdk-fs" remote="codeaurora-imx" revision="refs/tags/o8.1.0_1.3.0_8m-ga"/>
+  <project path="system/connectivity/wificond" name="aosp/platform/system/connectivity/wificond" groups="pdk" remote="codeaurora-imx" revision="refs/tags/o8.1.0_1.3.0_8m-ga" />
+  <project path="system/tools/bpt" name="aosp/platform/system/tools/bpt" groups="pdk" remote="codeaurora-imx" revision="refs/tags/o8.1.0_1.3.0_8m-ga"/>
+  <project path="system/sepolicy" name="aosp/platform/system/sepolicy" groups="pdk" remote="codeaurora-imx" revision="refs/tags/o8.1.0_1.3.0_8m-ga"/>
+  <project path="vendor/nxp-opensource/imx-lib" name="imx-lib" remote="codeaurora-imx" revision="refs/tags/o8.1.0_1.3.0_8m-ga" />
 
   <!-- Unchanged AOSP projects -->
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
