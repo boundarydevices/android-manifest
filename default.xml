@@ -22,7 +22,7 @@
   <project path="vendor/boundary/imx-mkimage" name="imx-mkimage" remote="boundary-github" revision="boundary-imx_4.9.51_imx8m_ga" />
 
   <!-- Boundary Devices machine layer -->
-  <project path="device/boundary" name="android_device_boundary" remote="boundary-github" revision="boundary-imx-o8.1.0_1.3.0_8m-ga-pass1" />
+  <project path="device/boundary" name="android_device_boundary" remote="boundary-github" revision="boundary-imx-o8.1.0_1.3.0_8m-ga" />
 
   <!-- projects added by Boundary -->
   <project path="external/can-utils" name="linux-can/can-utils.git" remote="github" revision="master" />
