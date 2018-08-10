@@ -17,7 +17,7 @@
            sync-j="4" />
 
   <!-- Boundary Devices kernel and U-Boot -->
-  <project path="vendor/boundary/uboot-imx" name="u-boot-imx6" remote="boundary-github" revision="boundary-imx_v2017.03_4.9.51_imx8m_ga" />
+  <project path="vendor/boundary/uboot-imx" name="u-boot-imx6" remote="boundary-github" revision="boundary-v2018.07" />
   <project path="vendor/boundary/kernel_imx" name="linux-imx6" remote="boundary-github" revision="boundary-imx-o8.1.0_1.3.0_8m-ga" />
   <project path="vendor/boundary/imx-mkimage" name="imx-mkimage" remote="boundary-github" revision="boundary-imx_4.9.51_imx8m_ga" />
 
