@@ -46,7 +46,7 @@
 
   <!-- Projects updated by Boundary Devices -->
   <project path="vendor/boundary/uboot-imx" name="u-boot-imx6" remote="boundary-github" revision="boundary-v2018.07" groups="boundary" />
-  <project path="vendor/boundary/imx-mkimage" name="imx-mkimage" remote="boundary-github" revision="boundary-imx_4.9.51_imx8m_ga" groups="boundary" />
+  <project path="vendor/boundary/imx-mkimage" name="imx-mkimage" remote="boundary-github" revision="boundary-imx_4.9.123_imx8mm_ga" groups="boundary" />
   <project path="vendor/boundary/kernel_imx" name="linux-imx6" remote="boundary-github" revision="boundary-imx-p9.0.0_1.0.0-ga" groups="boundary" />
 
   <!-- For imx git. -->
