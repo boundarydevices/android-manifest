@@ -53,6 +53,7 @@
   <project path="vendor/boundary/kernel_imx" name="linux-imx6" remote="boundary-github" revision="boundary-imx-p9.0.0_1.0.0-ga" groups="boundary" />
   <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" remote="boundary-github" revision="boundary-imx-p9.0.0_1.0.0-ga" />
   <project path="external/qca-firmware" name="qca-firmware" remote="boundary-linode" revision="master" />
+  <project path="vendor/nxp-opensource/imx" name="android_hardware_imx" remote="boundary-github" revision="boundary-imx-p9.0.0_1.0.0-ga" />
 
   <!-- For imx git. -->
   <project path="vendor/nxp/imx-firmware" name="imx-firmware" remote="imx-proprietary" revision="3a01285785a7391bb62b5fcf0400208c3fe391bf" />
@@ -64,7 +65,6 @@
   <project path="vendor/nxp-opensource/libdrm-imx" name="libdrm-imx" remote="imx-linux-sdk" revision="refs/tags/p9.0.0_1.0.0-ga" />
 
   <project path="device/fsl" name="device/fsl" remote="android-imx-orig" revision="refs/tags/p9.0.0_1.0.0-ga" />
-  <project path="vendor/nxp-opensource/imx" name="platform/hardware/imx" remote="android-imx-orig" revision="refs/tags/p9.0.0_1.0.0-ga" />
   <project path="vendor/nxp-opensource/fsl_imx_demo" name="platform/packages/apps/fsl_imx_demo" remote="android-imx-orig" revision="refs/tags/p9.0.0_1.0.0-ga" />
 
 
