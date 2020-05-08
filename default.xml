@@ -20,8 +20,8 @@
   <project path="vendor/boundary/uboot-imx" name="u-boot-imx6" remote="boundary-github" revision="boundary-v2018.07" />
   <project path="vendor/boundary/arm-trusted-firmware" name="imx-atf" remote="boundary-github" revision="boundary-imx_4.14.98_2.3.0" />
   <project path="vendor/boundary/kernel_imx" name="linux-imx6" remote="boundary-github" revision="boundary-android-10.0.0_1.0.0" />
-  <project path="vendor/boundary/qcacld-2.0" name="qcacld-2.0" remote="boundary-github" revision="boundary-CNSS.LEA.NRT_2.0" />
-  <project path="vendor/boundary/qca-firmware" name="qca-firmware" remote="boundary-github" revision="bd-sdmac-qcacld-lea-2.0" />
+  <project path="vendor/boundary/qcacld-2.0" name="qcacld-2.0" remote="boundary-github" revision="boundary-LNX.LEH.4.2.2.2" />
+  <project path="vendor/boundary/qca-firmware" name="qca-firmware" remote="boundary-github" revision="bd-sdmac-qcacld" />
 
   <!-- Boundary Devices machine layer -->
   <project path="device/boundary" name="android_device_boundary" remote="boundary-github" revision="boundary-android-10.0.0_1.0.0" >
