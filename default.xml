@@ -21,7 +21,7 @@
   <!-- Boundary Devices kernel and U-Boot -->
   <project path="vendor/boundary/arm-trusted-firmware" name="imx-atf" remote="boundary-github" revision="boundary-imx_5.4.47_2.2.0" />
   <project path="vendor/boundary/uboot-imx" name="u-boot-imx6" remote="boundary-github" revision="boundary-v2020.10-pass1" />
-  <project path="vendor/boundary/kernel_imx" name="linux-imx6" remote="boundary-github" revision="boundary-android-10.0.0_2.5.0-pass1" />
+  <project path="vendor/boundary/kernel_imx" name="linux-imx6" remote="boundary-github" revision="boundary-android-10.0.0_2.5.0" />
   <project path="vendor/boundary/qcacld-2.0" name="qcacld-2.0" remote="boundary-github" revision="boundary-LNX.LEH.4.2.2.2" />
   <project path="vendor/boundary/qca-firmware" name="qca-firmware" remote="boundary-github" revision="bd-sdmac-qcacld" />
 
