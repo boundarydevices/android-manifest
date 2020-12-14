@@ -56,6 +56,7 @@
   <project path="packages/apps/Camera2" name="aosp/platform/packages/apps/Camera2" groups="pdk-fs" remote="codeaurora-imx" revision="refs/tags/android-10.0.0_2.5.0" />
   <project path="packages/apps/DeskClock" name="aosp/platform/packages/apps/DeskClock" groups="pdk-fs" remote="codeaurora-imx" revision="refs/tags/android-10.0.0_2.5.0" />
   <project path="packages/apps/Gallery2" name="aosp/platform/packages/apps/Gallery2" groups="pdk-fs" remote="codeaurora-imx" revision="refs/tags/android-10.0.0_2.5.0" />
+  <project path="packages/apps/LegacyCamera" name="aosp/platform/packages/apps/LegacyCamera" groups="pdk-fs" remote="codeaurora-imx" revision="refs/tags/android-10.0.0_2.5.0" />
   <project path="packages/apps/Settings" name="aosp/platform/packages/apps/Settings" groups="pdk-fs" remote="codeaurora-imx" revision="refs/tags/android-10.0.0_2.5.0" />
   <project path="packages/apps/SoundRecorder" name="aosp/platform/packages/apps/SoundRecorder" groups="pdk-fs" remote="codeaurora-imx" revision="refs/tags/android-10.0.0_2.5.0" />
   <project path="system/core" name="aosp/platform/system/core" groups="pdk" remote="codeaurora-imx" revision="refs/tags/android-10.0.0_2.5.0" />
@@ -539,7 +540,6 @@
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" groups="pdk-fs" />
   <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" groups="pdk-fs" />
   <project path="packages/apps/Launcher3" name="platform/packages/apps/Launcher3" groups="pdk-fs" />
-  <project path="packages/apps/LegacyCamera" name="platform/packages/apps/LegacyCamera" groups="pdk-fs" />
   <project path="packages/apps/ManagedProvisioning" name="platform/packages/apps/ManagedProvisioning" groups="pdk-fs" />
   <project path="packages/apps/Messaging" name="platform/packages/apps/Messaging" groups="pdk-fs" />
   <project path="packages/apps/Music" name="platform/packages/apps/Music" groups="pdk-fs" />
