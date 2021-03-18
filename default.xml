@@ -44,6 +44,7 @@
 
   <!-- Proprietary i.MX repositories -->
   <project path="vendor/nxp" name="vendor/nxp" remote="boundary-linode" revision="boundary-android-10.0.0_2.5.0" />
+  <project path="vendor/quectel/ec2x" name="vendor/quectel/ec2x" remote="boundary-linode" revision="boundary-android-10.0.0_2.5.0" />
 
   <!-- Public i.MX repositories -->
   <project path="bootable/recovery" name="aosp/platform/bootable/recovery" groups="pdk" remote="codeaurora-imx" revision="refs/tags/android-10.0.0_2.5.0" />
