@@ -43,6 +43,7 @@
   <project path="external/libgpiod" name="libgpiod" remote="boundary-github" revision="v1.4.x" />
 
   <!-- Proprietary i.MX repositories -->
+  <project path="hardware/invensense" name="hardware/invensense" remote="boundary-linode" revision="boundary-android-10.0.0_2.5.0" />
   <project path="vendor/nxp" name="vendor/nxp" remote="boundary-linode" revision="boundary-android-10.0.0_2.5.0" />
   <project path="vendor/quectel/ec2x" name="vendor/quectel/ec2x" remote="boundary-linode" revision="boundary-android-10.0.0_2.5.0" />
 
@@ -490,7 +491,6 @@
   <project path="hardware/google/av" name="platform/hardware/google/av" groups="pdk" />
   <project path="hardware/google/easel" name="platform/hardware/google/easel" groups="pdk,easel" />
   <project path="hardware/google/interfaces" name="platform/hardware/google/interfaces" groups="pdk" />
-  <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense,pdk" />
   <project path="hardware/knowles/athletico/sound_trigger_hal" name="platform/hardware/knowles/athletico/sound_trigger_hal" groups="coral" />
   <project path="hardware/libhardware" name="platform/hardware/libhardware" groups="pdk" />
   <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" />
