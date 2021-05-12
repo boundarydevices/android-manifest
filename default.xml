@@ -35,6 +35,7 @@
   <project path="frameworks/native" name="frameworks_native" remote="boundary-github" revision="boundary-android-10.0.0_2.5.0" />
   <project path="hardware/interfaces" name="android_hardware_interfaces" remote="boundary-github" revision="boundary-android-10.0.0_2.5.0" />
   <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" remote="boundary-github" revision="boundary-android-10.0.0_2.5.0" />
+  <project path="system/core" name="android_system_core" remote="boundary-github" revision="boundary-android-10.0.0_2.5.0" />
   <project path="vendor/nxp-opensource/imx" name="android_hardware_imx" remote="boundary-github" revision="boundary-android-10.0.0_2.5.0" />
   <project path="vendor/nxp-opensource/fsl_imx_demo" name="fsl_imx_demo" remote="boundary-github" revision="boundary-android-10.0.0_2.5.0" />
 
@@ -61,7 +62,6 @@
   <project path="packages/apps/LegacyCamera" name="aosp/platform/packages/apps/LegacyCamera" groups="pdk-fs" remote="codeaurora-imx" revision="refs/tags/android-10.0.0_2.5.0" />
   <project path="packages/apps/Settings" name="aosp/platform/packages/apps/Settings" groups="pdk-fs" remote="codeaurora-imx" revision="refs/tags/android-10.0.0_2.5.0" />
   <project path="packages/apps/SoundRecorder" name="aosp/platform/packages/apps/SoundRecorder" groups="pdk-fs" remote="codeaurora-imx" revision="refs/tags/android-10.0.0_2.5.0" />
-  <project path="system/core" name="aosp/platform/system/core" groups="pdk" remote="codeaurora-imx" revision="refs/tags/android-10.0.0_2.5.0" />
   <project path="system/extras" name="aosp/platform/system/extras" groups="pdk" remote="codeaurora-imx" revision="refs/tags/android-10.0.0_2.5.0" />
   <project path="system/keymaster" name="aosp/platform/system/keymaster" groups="pdk" remote="codeaurora-imx" revision="refs/tags/android-10.0.0_2.5.0"/>
   <project path="system/media" name="aosp/platform/system/media" groups="pdk" remote="codeaurora-imx" revision="refs/tags/android-10.0.0_2.5.0" />
