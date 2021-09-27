@@ -4,8 +4,15 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com/"
            review="https://android-review.googlesource.com/" />
-  <remote  name="codeaurora-imx"
-           fetch="https://source.codeaurora.org/external/imx/" />
+  <remote  name="android-imx"
+           fetch="https://source.codeaurora.org/external/imx/aosp/"
+           review="" />
+  <remote  name="android-imx-orig"
+           fetch="https://source.codeaurora.org/external/imx/android-imx"
+           review="" />
+  <remote  name="imx-linux-sdk"
+           fetch="https://source.codeaurora.org/external/imx/"
+           review="" />
   <remote  name="imx-proprietary"
            fetch="https://github.com/nxp/" />
   <remote  name="boundary-github"
@@ -63,10 +70,8 @@
   <project path="system/memory/libion" name="platform/system/memory/libion" groups="pdk" remote="android-imx" revision="refs/tags/android-11.0.0_2.2.0"/>
   <project path="system/memory/lmkd" name="platform/system/memory/lmkd" groups="pdk" remote="android-imx" revision="refs/tags/android-11.0.0_2.2.0"/>
   <project path="system/sepolicy" name="platform/system/sepolicy" groups="pdk" remote="android-imx" revision="refs/tags/android-11.0.0_2.2.0" />
-  <project path="vendor/nxp-opensource/fsl_imx_demo" name="platform/packages/apps/fsl_imx_demo" remote="android-imx-orig" revision="refs/tags/android-11.0.0_2.2.0" />
   <project path="vendor/nxp-opensource/imx-lib" name="imx-lib" remote="imx-linux-sdk" revision="refs/tags/android-11.0.0_2.2.0" />
   <project path="vendor/nxp-opensource/imx-mkimage" name="imx-mkimage" remote="imx-linux-sdk" revision="refs/tags/android-11.0.0_2.2.0" />
-  <project path="vendor/nxp-opensource/imx" name="platform/hardware/imx" remote="android-imx-orig" revision="refs/tags/android-11.0.0_2.2.0" />
   <project path="vendor/nxp-opensource/libdrm-imx" name="libdrm-imx" remote="imx-linux-sdk" revision="refs/tags/android-11.0.0_2.2.0" />
   <project path="vendor/nxp-opensource/nn-imx" name="nn-imx" remote="imx-linux-sdk" revision="refs/tags/android-11.0.0_2.2.0" />
   <project path="vendor/nxp-opensource/verisilicon_sw_isp_vvcam" name="isp-vvcam" remote="imx-linux-sdk" revision="refs/tags/android-11.0.0_2.2.0" />
@@ -489,7 +494,6 @@
   <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/rs" name="platform/frameworks/rs" groups="pdk" />
   <project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" groups="pdk-cw-fs,pdk-fs" />
-  <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense,pdk" />
   <project path="hardware/knowles/athletico/sound_trigger_hal" name="platform/hardware/knowles/athletico/sound_trigger_hal" groups="coral,generic_fs" />
   <project path="hardware/libhardware" name="platform/hardware/libhardware" groups="pdk" />
   <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" />
