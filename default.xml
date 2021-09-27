@@ -494,6 +494,13 @@
   <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/rs" name="platform/frameworks/rs" groups="pdk" />
   <project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" groups="pdk-cw-fs,pdk-fs" />
+  <project path="hardware/google/apf" name="platform/hardware/google/apf" groups="pdk" />
+  <project path="hardware/google/av" name="platform/hardware/google/av" groups="pdk" />
+  <project path="hardware/google/camera" name="platform/hardware/google/camera" groups="pdk" />
+  <project path="hardware/google/easel" name="platform/hardware/google/easel" groups="pdk,easel" />
+  <project path="hardware/google/interfaces" name="platform/hardware/google/interfaces" groups="pdk" />
+  <project path="hardware/google/pixel" name="platform/hardware/google/pixel" groups="generic_fs,pixel" />
+  <project path="hardware/google/pixel-sepolicy" name="platform/hardware/google/pixel-sepolicy" groups="generic_fs,pixel" />
   <project path="hardware/knowles/athletico/sound_trigger_hal" name="platform/hardware/knowles/athletico/sound_trigger_hal" groups="coral,generic_fs" />
   <project path="hardware/libhardware" name="platform/hardware/libhardware" groups="pdk" />
   <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" />
