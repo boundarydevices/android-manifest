@@ -5,14 +5,11 @@
            fetch="https://android.googlesource.com/"
            review="https://android-review.googlesource.com/" />
   <remote  name="android-imx"
-           fetch="https://source.codeaurora.org/external/imx/aosp/"
-           review="" />
+           fetch="https://source.codeaurora.org/external/imx/aosp/" />
   <remote  name="android-imx-orig"
-           fetch="https://source.codeaurora.org/external/imx/android-imx"
-           review="" />
+           fetch="https://source.codeaurora.org/external/imx/android-imx" />
   <remote  name="imx-linux-sdk"
-           fetch="https://source.codeaurora.org/external/imx/"
-           review="" />
+           fetch="https://source.codeaurora.org/external/imx/" />
   <remote  name="imx-proprietary"
            fetch="https://github.com/nxp/" />
   <remote  name="boundary-github"
@@ -45,6 +42,7 @@
   <project path="system/core" name="android_system_core" remote="boundary-github" revision="boundary-android-11.0.0_2.2.0" />
   <project path="vendor/nxp-opensource/imx" name="android_hardware_imx" remote="boundary-github" revision="boundary-android-11.0.0_2.2.0" />
   <project path="vendor/nxp-opensource/fsl_imx_demo" name="fsl_imx_demo" remote="boundary-github" revision="boundary-android-11.0.0_2.2.0" />
+  <project path="vendor/nxp-opensource/verisilicon_sw_isp_vvcam" name="isp-vvcam" remote="boundary-github" revision="boundary-android-11.0.0_2.2.0" />
 
   <!-- Boundary Devices additions -->
   <project path="external/can-utils" name="linux-can/can-utils" remote="github" revision="master" />
@@ -75,7 +73,6 @@
   <project path="vendor/nxp-opensource/imx-mkimage" name="imx-mkimage" remote="imx-linux-sdk" revision="refs/tags/android-11.0.0_2.2.0" />
   <project path="vendor/nxp-opensource/libdrm-imx" name="libdrm-imx" remote="imx-linux-sdk" revision="refs/tags/android-11.0.0_2.2.0" />
   <project path="vendor/nxp-opensource/nn-imx" name="nn-imx" remote="imx-linux-sdk" revision="refs/tags/android-11.0.0_2.2.0" />
-  <project path="vendor/nxp-opensource/verisilicon_sw_isp_vvcam" name="isp-vvcam" remote="imx-linux-sdk" revision="refs/tags/android-11.0.0_2.2.0" />
   <project path="vendor/nxp/vpu_wrapper" name="imx-vpuwrap" remote="imx-proprietary" revision="refs/tags/android-11.0.0_2.2.0" />
 
   <!-- Unchanged AOSP projects -->
