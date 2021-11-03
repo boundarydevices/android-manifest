@@ -39,6 +39,7 @@
   <project path="frameworks/native" name="frameworks_native" remote="boundary-github" revision="boundary-android-11.0.0_2.2.0" />
   <project path="hardware/interfaces" name="android_hardware_interfaces" remote="boundary-github" revision="boundary-android-11.0.0_2.2.0" />
   <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" remote="boundary-github" revision="boundary-android-11.0.0_2.2.0" />
+  <project path="system/bt" name="android_system_bt" remote="boundary-github" revision="boundary-android-11.0.0_2.2.0" />
   <project path="system/core" name="android_system_core" remote="boundary-github" revision="boundary-android-11.0.0_2.2.0" />
   <project path="vendor/nxp-opensource/imx" name="android_hardware_imx" remote="boundary-github" revision="boundary-android-11.0.0_2.2.0" />
   <project path="vendor/nxp-opensource/fsl_imx_demo" name="fsl_imx_demo" remote="boundary-github" revision="boundary-android-11.0.0_2.2.0" />
@@ -673,7 +674,6 @@
   <project path="prebuilts/vndk/v29" name="platform/prebuilts/vndk/v29" groups="pdk" clone-depth="1" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs,pdk-fs" />
   <project path="system/apex" name="platform/system/apex" groups="pdk" />
-  <project path="system/bt" name="platform/system/bt" groups="pdk" />
   <project path="system/bpf" name="platform/system/bpf" groups="pdk" />
   <project path="system/bpfprogs" name="platform/system/bpfprogs" groups="pdk" />
   <project path="system/ca-certificates" name="platform/system/ca-certificates" groups="pdk" />
