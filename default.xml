@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <remote  name="boundary-github"
+           fetch="https://github.com/boundarydevices/" />
+  <remote  name="boundary-linode"
+           fetch="ssh://git@linode.boundarydevices.com/" />
   <remote  name="aosp"
-           fetch=".."
+           fetch="https://android.googlesource.com/"
            review="https://android-review.googlesource.com/" />
   <default revision="refs/tags/android-12.0.0_r27"
            remote="aosp"
@@ -11,6 +15,17 @@
   <superproject name="platform/superproject" remote="aosp" revision="android-12.0.0_r27" />
   <contactinfo bugurl="go/repo-bug" />
 
+  <!-- Boundary Devices additions -->
+  <project path="device/amlogic/yukawa" name="device_amlogic_yukawa" remote="boundary-github" revision="boundary-aml-android-12.0.0" >
+    <linkfile src="build/make.sh" dest="make.sh" />
+  </project>
+  <project path="external/libgpiod" name="libgpiod" remote="boundary-github" revision="v1.4.x" />
+  <project path="prebuilts/toolchains" name="prebuilts/toolchains" remote="boundary-linode" revision="boundary-android-12.0.0" />
+  <project path="vendor/boundary/kernel" name="linux" remote="boundary-github" revision="boundary-aml-android-5.15.y-pass1" />
+  <project path="vendor/boundary/qcacld-2.0" name="qcacld-2.0" remote="boundary-github" revision="boundary-CNSS.LEA.NRT_3.1" />
+  <project path="vendor/boundary/qca-firmware" name="qca-firmware" remote="boundary-github" revision="bd-sdmac-qcacld-lea-3.0" />
+
+  <!-- Unchanged AOSP projects -->
   <project path="build/make" name="platform/build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
@@ -42,7 +57,6 @@
   <project path="developers/demos" name="platform/developers/demos" groups="developers" />
   <project path="developers/samples/android" name="platform/developers/samples/android" groups="developers" />
   <project path="development" name="platform/development" groups="developers,pdk-cw-fs,pdk-fs" />
-  <project path="device/amlogic/yukawa" name="device/amlogic/yukawa" groups="device,yukawa,pdk" />
   <project path="device/amlogic/yukawa-kernel" name="device/amlogic/yukawa-kernel" groups="device,yukawa,pdk" clone-depth="2" />
   <project path="device/common" name="device/common" groups="pdk-cw-fs,pdk" />
   <project path="device/generic/arm64" name="device/generic/arm64" groups="pdk" />
