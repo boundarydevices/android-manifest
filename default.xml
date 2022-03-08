@@ -48,6 +48,7 @@
   <!-- Boundary Devices additions -->
   <project path="external/can-utils" name="linux-can/can-utils" remote="github" revision="master" />
   <project path="external/libgpiod" name="libgpiod" remote="boundary-github" revision="v1.4.x" />
+  <project path="external/libubootenv" name="libubootenv" remote="boundary-github" revision="master" />
   <project path="hardware/invensense" name="hardware/invensense" remote="boundary-linode" revision="boundary-android-11.0.0_2.2.0" />
   <project path="prebuilts/toolchains" name="prebuilts/toolchains" remote="boundary-linode" revision="boundary-android-11.0.0_2.2.0" />
   <project path="system/tools/bpt" name="platform/system/tools/bpt" groups="pdk" revision="e2c77aebf72d56beb50329e9ce873ea834e02164" />
