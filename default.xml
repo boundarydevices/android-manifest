@@ -16,6 +16,14 @@
            remote="aosp"
            sync-j="4" />
 
+  <!-- Boundary Devices repositories -->
+  <project path="bootloader/uboot-repo/bl33" name="u-boot" remote="boundary-github" revision="boundary-aml-p9.0.0" />
+  <project path="common" name="linux" remote="boundary-github" revision="boundary-aml-p9.0.0" />
+  <project path="device/amlogic" name="android_device_boundary" remote="boundary-github" revision="boundary-aml-p9.0.0" />
+  <project path="prebuilts/toolchains" name="prebuilts/toolchains" remote="boundary-linode" revision="boundary-aml-p9.0.0" />
+  <project path="vendor/boundary/qcacld-2.0" name="qcacld-2.0" remote="boundary-github" revision="boundary-CNSS.LEA.NRT_3.1" />
+  <project path="vendor/boundary/qca-firmware" name="qca-firmware" remote="boundary-github" revision="bd-sdmac-qcacld-lea-3.0" />
+
   <!-- Amlogic proprietary repositories -->
   <project path="bootloader/uboot-repo/bl2/bin" name="aml/bootloader/uboot-repo/bl2/bin" remote="boundary-linode" revision="boundary-aml-p9.0.0" />
   <project path="bootloader/uboot-repo/bl30/bin" name="aml/bootloader/uboot-repo/bl30/bin" remote="boundary-linode" revision="boundary-aml-p9.0.0" />
