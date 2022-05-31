@@ -17,6 +17,14 @@
            sync-j="4" />
 
   <!-- Amlogic proprietary repositories -->
+  <project path="bootloader/uboot-repo/bl2/bin" name="aml/bootloader/uboot-repo/bl2/bin" remote="boundary-linode" revision="boundary-aml-p9.0.0" />
+  <project path="bootloader/uboot-repo/bl30/bin" name="aml/bootloader/uboot-repo/bl30/bin" remote="boundary-linode" revision="boundary-aml-p9.0.0" />
+  <project path="bootloader/uboot-repo/bl31/bin" name="aml/bootloader/uboot-repo/bl31/bin" remote="boundary-linode" revision="boundary-aml-p9.0.0" />
+  <project path="bootloader/uboot-repo/bl31_1.3/bin" name="aml/bootloader/uboot-repo/bl31_1.3/bin" remote="boundary-linode" revision="boundary-aml-p9.0.0" />
+  <project path="bootloader/uboot-repo/bl32/bin" name="aml/bootloader/uboot-repo/bl32/bin" remote="boundary-linode" revision="boundary-aml-p9.0.0" />
+  <project path="bootloader/uboot-repo/fip" name="aml/bootloader/uboot-repo/fip" remote="boundary-linode" revision="boundary-aml-p9.0.0" >
+    <copyfile dest="bootloader/uboot-repo/mk" src="mk"/>
+  </project>
   <project path="hardware/amlogic/audio" name="android_hardware_amlogic_audio" remote="khadas" revision="fc30df2b0763ebd80f611871e7ea71584278da2d" />
   <project path="hardware/amlogic/bluetooth" name="android_hardware_amlogic_bluetooth" remote="khadas" revision="1aaaf154ef5163a7909e768244ba20fc398961d2" />
   <project path="hardware/amlogic/bootctrl" name="android_hardware_amlogic_bootctrl" remote="khadas" revision="218e8db30273ca12bb03ff32fe2eecb831963ada" />
