@@ -96,7 +96,7 @@
   <project path="vendor/amlogic/common/scripts" name="android_vendor_amlogic_scripts" remote="khadas" revision="fae5fa8f241f0fd89183509be9439bfaba328567" />
   <project path="vendor/amlogic/common/system/droidvold" name="android_vendor_amlogic_system_droidvold" remote="khadas" revision="32d84b1120a18e1c62c8fec5e5e4797cb8bb7314" />
   <project path="vendor/amlogic/common/system" name="android_vendor_amlogic_system" remote="khadas" revision="c2eaa777aa33bc8d4c48b5ca76232dfc286eca8e" />
-  <project path="vendor/amlogic/common/tdk/linuxdriver" name="android_vendor_amlogic_tdk_linuxdriver" remote="khadas" revision="b35d51806efa228a9e6d2efbb7af45a03eaa52ae" />
+  <project path="vendor/amlogic/common/tdk/linuxdriver" name="aml/vendor/amlogic/common/tdk/linuxdriver" remote="boundary-linode" revision="boundary-aml-p9.0.0" />
   <project path="vendor/amlogic/common/tools/auto_patch" name="android_vendor_amlogic_tools_auto_patch" remote="khadas" revision="bc6e21726ea4b85b451e5e0f3f7ee29f39d7d156" />
   <project path="vendor/amlogic/common/tools" name="android_vendor_amlogic_tools" remote="khadas" revision="dca3a75dd0a062548ddebd12cec5de07f6a8261a" />
   <project path="vendor/amlogic/common/tv/frameworks" name="android_vendor_amlogic_tv_frameworks" remote="khadas" revision="d1187f9f28be204524ad025fb4c049859d766ef0" />
