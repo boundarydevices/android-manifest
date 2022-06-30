@@ -41,7 +41,7 @@
   <project path="vendor/nxp-opensource/fsl_imx_demo" name="fsl_imx_demo" remote="boundary-github" revision="boundary-android-10.0.0_2.5.0" />
 
   <!-- Boundary Devices additions -->
-  <project path="external/can-utils" name="linux-can/can-utils" remote="github" revision="master" />
+  <project path="external/can-utils" name="linux-can/can-utils" remote="github" revision="34732eddeb7a4bcf2f748d7a94eb6a806f370e88" />
   <project path="external/libgpiod" name="libgpiod" remote="boundary-github" revision="v1.4.x" />
 
   <!-- Proprietary i.MX repositories -->
