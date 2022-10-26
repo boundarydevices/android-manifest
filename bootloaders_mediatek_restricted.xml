@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <remote name="aiot" fetch="ssh://git@gitlab.com/mediatek/aiot/" />
-    <project name="nda/libdram.git" path="libdram" remote="aiot" revision="main" />
-    <project name="nda/lk.git" path="lk" remote="aiot" revision="main" />
-    <project name="nda/mtk-secure-boot-tools.git" path="mtk-secure-boot-tools" remote="aiot" revision="python3" />
+    <remote name="nda"
+            fetch="ssh://git@gitlab.com/baylibre/mediatek/nda/"
+            revision="main" />
+
+    <project path="libdram" name="libdram" remote="nda" />
+    <project path="lk" name="lk" remote="nda" />
+    <project path="mtk-secure-boot-tools" name="mtk-secure-boot-tools" remote="nda" revision="python3" />
 </manifest>

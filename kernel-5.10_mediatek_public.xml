@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote  name="aosp"
+  <remote name="aosp"
 	  fetch="https://android.googlesource.com/"
-	  review="https://android-review.googlesource.com/" />
-  <remote  name="aiot" fetch="ssh://git@gitlab.com/mediatek/aiot/" />
-  <default revision="master-kernel-build-2021" remote="aosp" sync-j="4" />
+	  review="https://android-review.googlesource.com/"
+          revision="master-kernel-build-2021" />
+  <remote name="bsp"
+          fetch="ssh://git@gitlab.com/baylibre/mediatek/bsp/"
+          revision="mtk-android12-5.10" />
 
   <superproject name="kernel/superproject" remote="aosp"/>
-  <project path="build" name="kernel/build" />
-  <project path="hikey-modules" name="kernel/hikey-modules" revision="android12-5.10" />
-  <project path="kernel/tests" name="kernel/tests" />
-  <project path="kernel/configs" name="kernel/configs" />
-  <project path="common-modules/virtual-device" name="kernel/common-modules/virtual-device" revision="android12-5.10" />
-  <project path="prebuilts-master/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" clone-depth="1" />
-  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" clone-depth="1" />
-  <project path="prebuilts/boot-artifacts" name="platform/prebuilts/boot-artifacts" />
-  <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" clone-depth="1" />
-  <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" clone-depth="1" />
-  <project path="tools/mkbootimg" name="platform/system/tools/mkbootimg" />
+  <project path="build" name="kernel/build" remote="aosp" />
+  <project path="hikey-modules" name="kernel/hikey-modules" remote="aosp" revision="android12-5.10" />
+  <project path="kernel/tests" name="kernel/tests" remote="aosp" />
+  <project path="kernel/configs" name="kernel/configs" remote="aosp" />
+  <project path="common-modules/virtual-device" name="kernel/common-modules/virtual-device" remote="aosp" revision="android12-5.10" />
+  <project path="prebuilts-master/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" remote="aosp" clone-depth="1" />
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" remote="aosp" clone-depth="1" />
+  <project path="prebuilts/boot-artifacts" name="platform/prebuilts/boot-artifacts" remote="aosp" />
+  <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" remote="aosp" clone-depth="1" />
+  <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" remote="aosp" clone-depth="1" />
+  <project path="tools/mkbootimg" remote="aosp" name="platform/system/tools/mkbootimg" />
 
   <!-- mediatek kernel -->
-  <project path="common" name="bsp/linux" remote="aiot" revision="mtk-android12-5.10" groups="mediatek" />
+  <project path="common" name="linux" remote="bsp" groups="mediatek" />
 </manifest>

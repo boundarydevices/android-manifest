@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <remote name="aiot" fetch="ssh://git@gitlab.com/mediatek/aiot/" />
+    <remote name="nda"
+            fetch="ssh://git@gitlab.com/baylibre/mediatek/nda/"
+            revision="main" />
 
     <!-- device -->
-    <project path="device/mediatek/kernel-restricted-binaries" name="nda/rita/kernel-restricted-binaries" remote="aiot" revision="mtk-android-12" groups="mediatek-restricted" clone-depth="1" />
+    <project path="device/mediatek/kernel-restricted-binaries" name="rita/kernel-restricted-binaries" remote="nda" revision="mtk-android-12" groups="mediatek-restricted" clone-depth="1" />
 
     <!-- vendor -->
-    <project path="vendor/mediatek/boots" name="nda/boots" remote="aiot" revision="main" groups="mediatek-restricted" />
-    <project path="vendor/mediatek/mdpd" name="nda/mdpd.git" remote="aiot" revision="main" groups="mediatek-restricted" />
-    <project path="vendor/mediatek/wifitest" name="nda/wifitest" remote="aiot" revision="main" groups="mediatek-restricted" />
-    <project path="vendor/mediatek/wireless-restricted" name="nda/wireless-firmware" remote="aiot" revision="main" groups="mediatek-restricted" />
+    <project path="vendor/mediatek/boots" name="boots" remote="nda" groups="mediatek-restricted" />
+    <project path="vendor/mediatek/mdpd" name="mdpd" remote="nda" groups="mediatek-restricted" />
+    <project path="vendor/mediatek/wifitest" name="wifitest" remote="nda" groups="mediatek-restricted" />
+    <project path="vendor/mediatek/wireless-restricted" name="wireless-firmware" remote="nda" groups="mediatek-restricted" />
 </manifest>

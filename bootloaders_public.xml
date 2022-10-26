@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <remote name="aiot" fetch="ssh://git@gitlab.com/mediatek/aiot/" />
+    <remote name="bsp" fetch="ssh://git@gitlab.com/baylibre/mediatek/bsp/" />
+    <remote name="rita" fetch="ssh://git@gitlab.com/baylibre/mediatek/rita/" />
     <remote name="github" fetch="https://github.com/" />
 
-    <project name="bsp/trusted-firmware-a.git" path="arm-trusted-firmware" remote="aiot" revision="mtk-v2.6" />
-    <project name="bsp/build-bootloaders.git" path="build" remote="aiot" revision="main" />
-    <project name="bsp/optee-os.git" path="optee-os" remote="aiot" revision="mtk-v3.18" />
-    <project name="bsp/u-boot.git" path="u-boot" remote="aiot" revision="mtk-v2022.04" />
-    <project name="bsp/libbase-prebuilt.git" path="libbase-prebuilts" remote="aiot" revision="main" />
-    <project name="ARMmbed/mbedtls.git" path="mbedtls" remote="github" revision="refs/tags/mbedtls-2.26.0" />
+    <project path="arm-trusted-firmware" name="trusted-firmware-a" remote="bsp" revision="mtk-v2.6" />
+    <project path="build" name="build-bootloaders" remote="bsp" revision="main" />
+    <project path="optee-os" name="optee-os" remote="bsp" revision="mtk-v3.18" />
+    <project path="u-boot" name="u-boot" remote="bsp" revision="mtk-v2022.04" />
+    <project path="libbase-prebuilts" name="libbase-prebuilt" remote="bsp" revision="main" />
+    <project path="mbedtls" name="ARMmbed/mbedtls" remote="github" revision="refs/tags/mbedtls-2.26.0" />
 
     <!-- OPTEE: Trusted Applications -->
-    <project name="bsp/optee-otp" path="optee-ta/optee-otp" remote="aiot" revision="main" />
-    <project name="rita/hardware/linaro/kmgk" path="optee-ta/kmgk" remote="aiot" revision="mtk-android-12" />
-    <project name="OP-TEE/optee_test.git" path="optee-ta/optee_test" remote="github" revision="d9d269e8012809c919000e7ca775fffbfd958e7c" />
+    <project path="optee-ta/optee-otp" name="optee-otp" remote="bsp" revision="main" />
+    <project path="optee-ta/kmgk" name="hardware/linaro/kmgk" remote="rita" revision="mtk-android-12" />
+    <project path="optee-ta/optee_test" name="OP-TEE/optee_test" remote="github" revision="d9d269e8012809c919000e7ca775fffbfd958e7c" />
 </manifest>
