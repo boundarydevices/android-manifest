@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
     <remote name="nda"
-            fetch="ssh://git@gitlab.com/baylibre/mediatek/nda/"
+            fetch="ssh://git@gitlab.baylibre.com/baylibre/mediatek/nda/"
             revision="alps-release-r0.mp5-aiot" />
 
     <project path="mt7668-wifi-mod" name="mt7668-wifi-drv" remote="nda"  groups="mediatek-restricted" />

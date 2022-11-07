@@ -4,7 +4,7 @@
             fetch="https://android.googlesource.com/"
             revision="master-kernel-build-2021" />
     <remote name="bsp"
-            fetch="ssh://git@gitlab.com/baylibre/mediatek/bsp/"
+            fetch="ssh://git@gitlab.baylibre.com/baylibre/mediatek/bsp/"
             revision="mtk-android12-5.4" />
 
     <superproject name="kernel/superproject" remote="aosp"/>

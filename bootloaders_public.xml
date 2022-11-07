@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <remote name="bsp" fetch="ssh://git@gitlab.com/baylibre/mediatek/bsp/" />
-    <remote name="rita" fetch="ssh://git@gitlab.com/baylibre/mediatek/rita/" />
+    <remote name="bsp" fetch="ssh://git@gitlab.baylibre.com/baylibre/mediatek/bsp/" />
+    <remote name="rita" fetch="ssh://git@gitlab.baylibre.com/baylibre/mediatek/rita/" />
     <remote name="github" fetch="https://github.com/" />
 
     <project path="arm-trusted-firmware" name="trusted-firmware-a" remote="bsp" revision="mtk-v2.6" />

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <remote name="aiot-nda-cadence" fetch="ssh://git@gitlab.com/mediatek/aiot/nda-cadence/" />
+    <remote name="nda-cadence"
+            fetch="ssh://git@gitlab.baylibre.com/baylibre/mediatek/nda-cadence/"
+            revision="main" />
 
-    <project path="vendor/cadence/prebuilts" name="prebuilts" remote="aiot-nda-cadence" revision="main" groups="cadence-restricted" />
+    <project path="vendor/cadence/prebuilts" name="prebuilts" remote="nda-cadence" groups="cadence-restricted" />
 </manifest>
