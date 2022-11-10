@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <remote name="nda-cadence"
-            fetch="ssh://git@gitlab.baylibre.com/baylibre/mediatek/nda-cadence/"
-            revision="main" />
+    <remote name="rita"
+            fetch="ssh://git@gitlab.baylibre.com/baylibre/mediatek/rita/"
+            revision="mtk-android-12" />
 
-    <project path="vendor/cadence/prebuilts" name="prebuilts" remote="nda-cadence" groups="cadence-restricted" />
+    <project path="vendor/cadence/prebuilts" name="vendor/cadence/prebuilts" remote="rita" groups="cadence-restricted" />
 </manifest>
