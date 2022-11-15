@@ -14,9 +14,9 @@
     <project path="external/libcamera" name="libcamera" remote="bsp" revision="mtk-android-12" groups="mediatek" />
 
     <!-- public rita projects -->
-    <project path="device/mediatek/board" name="device/mediatek/board" remote="rita" groups="mediatek" />
+    <project path="device/mediatek/boards" name="device/mediatek/boards" remote="rita" groups="mediatek" />
     <project path="device/mediatek/common" name="device/mediatek/common" remote="rita" groups="mediatek" />
-    <project path="device/mediatek/kernel-binaries" name="device/mediatek/kernel-binaries" remote="rita" groups="mediatek" clone-depth="1" />
+    <project path="device/mediatek/boards-binaries" name="device/mediatek/boards-binaries" remote="rita" groups="mediatek" clone-depth="1" />
     <project path="hardware/linaro/kmgk" name="hardware/linaro/kmgk" remote="rita" groups="mediatek" />
     <project path="hardware/mediatek" name="hardware/mediatek" remote="rita" groups="mediatek" />
     <project path="vendor/arm/android-gralloc" name="vendor/arm/android-gralloc" remote="rita" groups="mediatek" />
