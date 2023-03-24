@@ -2,8 +2,22 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".."
+           fetch="https://android.googlesource.com/"
            review="https://android-review.googlesource.com/" />
+  <remote  name="imx-android"
+           fetch="https://github.com/nxp-imx-android" />
+  <remote  name="imx-linux-sdk"
+           fetch="https://github.com/nxp-imx" />
+  <remote  name="imx-proprietary"
+           fetch="https://github.com/nxp/" />
+  <remote  name="boundary-github"
+           fetch="https://github.com/boundarydevices/" />
+  <remote  name="boundary-linode"
+           fetch="ssh://git@linode.boundarydevices.com/" />
+  <remote  name="github"
+           fetch="https://github.com/" />
+  <remote  name="wireless-regdb"
+           fetch="https://git.kernel.org/pub/scm/linux/kernel/git/sforshee/" />
   <default revision="refs/tags/android-13.0.0_r7"
            remote="aosp"
            sync-j="4" />
@@ -11,6 +25,57 @@
   <superproject name="platform/superproject" remote="aosp" revision="android-13.0.0_r7" />
   <contactinfo bugurl="go/repo-bug" />
 
+  <!-- Boundary Devices kernel and U-Boot -->
+  <project path="vendor/boundary/arm-trusted-firmware" name="imx-atf" remote="boundary-github" revision="boundary-lf-5.15.71-2.2.0" />
+  <project path="vendor/boundary/uboot-imx" name="u-boot" remote="boundary-github" revision="boundary-v2022.04" />
+  <project path="vendor/boundary/kernel_imx" name="linux" remote="boundary-github" revision="boundary-android-13.0.0_1.0.0" />
+  <project path="vendor/boundary/qcacld-2.0" name="qcacld-2.0" remote="boundary-github" revision="boundary-CNSS.LEA.NRT_3.1" />
+  <project path="vendor/boundary/qca-firmware" name="qca-firmware" remote="boundary-github" revision="bd-sdmac-qcacld-lea-3.0" />
+
+  <!-- Boundary Devices machine layer -->
+  <project path="device/boundary" name="android_device_boundary" remote="boundary-github" revision="boundary-android-13.0.0_1.0.0" >
+    <linkfile src="common/tools/imx-make.sh" dest="imx-make.sh" />
+  </project>
+
+  <!-- Boundary Devices updates to other components -->
+  <project path="frameworks/base" name="android_frameworks_base" remote="boundary-github" revision="boundary-android-13.0.0_1.0.0" />
+  <project path="frameworks/native" name="frameworks_native" remote="boundary-github" revision="boundary-android-13.0.0_1.0.0" />
+  <project path="system/core" name="android_system_core" remote="boundary-github" revision="boundary-android-13.0.0_1.0.0" />
+  <project path="vendor/nxp-opensource/imx" name="android_hardware_imx" remote="boundary-github" revision="boundary-android-13.0.0_1.0.0" />
+  <project path="vendor/nxp-opensource/fsl_imx_demo" name="fsl_imx_demo" remote="boundary-github" revision="boundary-android-13.0.0_1.0.0" />
+  <project path="vendor/nxp-opensource/verisilicon_sw_isp_vvcam" name="isp-vvcam" remote="boundary-github" revision="boundary-lf-5.15.71-2.2.0" />
+
+  <!-- Boundary Devices additions -->
+  <project path="external/can-utils" name="linux-can/can-utils" remote="github" revision="master" />
+  <project path="external/libgpiod" name="libgpiod" remote="boundary-github" revision="v1.4.x" />
+  <project path="external/libubootenv" name="libubootenv" remote="boundary-github" revision="master" />
+  <project path="hardware/invensense" name="hardware/invensense" remote="boundary-linode" revision="boundary-android-13.0.0_1.0.0" />
+  <project path="prebuilts/toolchains" name="prebuilts/toolchains" remote="boundary-linode" revision="boundary-android-13.0.0_1.0.0" />
+  <project path="vendor/quectel/ec2x" name="vendor/quectel/ec2x" remote="boundary-linode" revision="boundary-android-13.0.0_1.0.0" />
+
+  <!-- Proprietary i.MX repositories -->
+  <project path="vendor/nxp" name="vendor/nxp" remote="boundary-linode" revision="boundary-android-13.0.0_1.0.0" />
+
+  <!-- Public i.MX repositories -->
+  <project path="bootable/recovery" name="aosp_platform_bootable_recovery" remote="imx-android" revision="refs/tags/android-13.0.0_1.0.0" />
+  <project path="external/glm" name="g-truc/glm" remote="github" revision="bf71a834948186f4097caa076cd2663c69a10e1e" />
+  <project path="external/tinyalsa" name="aosp_platform_external_tinyalsa" remote="imx-android" revision="refs/tags/android-13.0.0_1.0.0" />
+  <project path="external/tinycompress" name="aosp_platform_external_tinycompress" remote="imx-android" revision="refs/tags/android-13.0.0_1.0.0" />
+  <project path="external/wireless-regdb" name="wireless-regdb" remote="wireless-regdb" revision="9dc9c89375c996c4d1d1a8c0a76f9dd04e244077" />
+  <project path="frameworks/av" name="aosp_platform_frameworks_av" remote="imx-android" revision="refs/tags/android-13.0.0_1.0.0" />
+  <project path="hardware/google/camera" name="aosp_platform_hardware_google_camera" remote="imx-android" revision="refs/tags/android-13.0.0_1.0.0" />
+  <project path="hardware/interfaces" name="aosp_platform_hardware_interfaces" remote="imx-android" revision="refs/tags/android-13.0.0_1.0.0" />
+  <project path="packages/apps/Camera2" name="aosp_platform_packages_apps_Camera2" remote="imx-android" revision="refs/tags/android-13.0.0_1.0.0" />
+  <project path="system/memory/libion" name="aosp_platform_system_memory_libion" remote="imx-android" revision="refs/tags/android-13.0.0_1.0.0" />
+  <project path="system/tools/bpt" name="platform/system/tools/bpt" groups="pdk" revision="e2c77aebf72d56beb50329e9ce873ea834e02164" />
+  <project path="vendor/nxp-opensource/imx-lib" name="imx-lib" remote="imx-linux-sdk" revision="refs/tags/android-13.0.0_1.0.0" />
+  <project path="vendor/nxp-opensource/imx-mkimage" name="imx-mkimage" remote="imx-linux-sdk" revision="refs/tags/android-13.0.0_1.0.0" />
+  <project path="vendor/nxp-opensource/libdrm-imx" name="libdrm-imx" remote="imx-linux-sdk" revision="refs/tags/android-13.0.0_1.0.0" />
+  <project path="vendor/nxp-opensource/nn-imx" name="nn-imx" remote="imx-linux-sdk" revision="refs/tags/android-13.0.0_1.0.0" />
+  <project path="vendor/nxp/imx-firmware" name="imx-firmware" remote="imx-proprietary" revision="refs/tags/android-13.0.0_1.0.0" />
+  <project path="vendor/nxp/vpu_wrapper" name="imx-vpuwrap" remote="imx-proprietary" revision="refs/tags/android-13.0.0_1.0.0" />
+
+  <!-- Unchanged AOSP projects -->
   <project path="build/make" name="platform/build" groups="pdk" >
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -33,7 +98,6 @@
   </project>
   <project path="art" name="platform/art" groups="pdk" />
   <project path="bionic" name="platform/bionic" groups="pdk" />
-  <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
   <project path="bootable/libbootloader" name="platform/bootable/libbootloader" groups="vts,pdk" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs,pdk-fs" />
@@ -310,7 +374,6 @@
   <project path="external/marisa-trie" name="platform/external/marisa-trie" groups="pdk" />
   <project path="external/markdown" name="platform/external/markdown" groups="pdk" />
   <project path="external/mdnsresponder" name="platform/external/mdnsresponder" groups="pdk" />
-  <project path="external/mesa3d" name="platform/external/mesa3d" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/mime-support" name="platform/external/mime-support" groups="pdk" />
   <project path="external/minigbm" name="platform/external/minigbm" groups="pdk" />
   <project path="external/minijail" name="platform/external/minijail" groups="pdk" />
@@ -662,9 +725,7 @@
   <project path="external/testng" name="platform/external/testng" groups="pdk" />
   <project path="external/tflite-support" name="platform/external/tflite-support" groups="pdk" />
   <project path="external/timezone-boundary-builder" name="platform/external/timezone-boundary-builder" groups="pdk" clone-depth="2" />
-  <project path="external/tinyalsa" name="platform/external/tinyalsa" groups="pdk" />
   <project path="external/tinyalsa_new" name="platform/external/tinyalsa_new" groups="pdk" />
-  <project path="external/tinycompress" name="platform/external/tinycompress" groups="pdk" />
   <project path="external/tinyxml2" name="platform/external/tinyxml2" groups="pdk" />
   <project path="external/toolchain-utils" name="platform/external/toolchain-utils" />
   <project path="external/toybox" name="platform/external/toybox" groups="pdk" />
@@ -704,8 +765,6 @@
   <project path="external/zstd" name="platform/external/zstd" groups="pdk" />
   <project path="external/zucchini" name="platform/external/zucchini" groups="pdk" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk" />
-  <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" />
-  <project path="frameworks/base" name="platform/frameworks/base" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
@@ -719,7 +778,6 @@
   <project path="frameworks/libs/service_entitlement" name="platform/frameworks/libs/service_entitlement" groups="pdk" />
   <project path="frameworks/minikin" name="platform/frameworks/minikin" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/multidex" name="platform/frameworks/multidex" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/native" name="platform/frameworks/native" groups="pdk" />
   <project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" groups="pdk-fs" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/car/services" name="platform/frameworks/opt/car/services" groups="pdk-fs" />
@@ -742,7 +800,6 @@
   <project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" groups="pdk-cw-fs,pdk-fs" />
   <project path="hardware/google/apf" name="platform/hardware/google/apf" groups="pdk" />
   <project path="hardware/google/av" name="platform/hardware/google/av" groups="pdk" />
-  <project path="hardware/google/camera" name="platform/hardware/google/camera" groups="pdk" />
   <project path="hardware/google/easel" name="platform/hardware/google/easel" groups="pdk,easel" />
   <project path="hardware/google/gchips" name="platform/hardware/google/gchips" groups="pdk-lassen,pdk-gs-arm" />
   <project path="hardware/google/graphics/common" name="platform/hardware/google/graphics/common" groups="pdk-lassen,pdk-gs-arm" />
@@ -750,8 +807,6 @@
   <project path="hardware/google/interfaces" name="platform/hardware/google/interfaces" groups="pdk" />
   <project path="hardware/google/pixel" name="platform/hardware/google/pixel" groups="generic_fs,pixel" />
   <project path="hardware/google/pixel-sepolicy" name="platform/hardware/google/pixel-sepolicy" groups="generic_fs,pixel" />
-  <project path="hardware/interfaces" name="platform/hardware/interfaces" groups="pdk" />
-  <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense,pdk" />
   <project path="hardware/knowles/athletico/sound_trigger_hal" name="platform/hardware/knowles/athletico/sound_trigger_hal" groups="coral,generic_fs" />
   <project path="hardware/libhardware" name="platform/hardware/libhardware" groups="pdk" />
   <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" />
@@ -777,7 +832,6 @@
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/apps/Browser2" name="platform/packages/apps/Browser2" groups="pdk-fs" />
   <project path="packages/apps/Calendar" name="platform/packages/apps/Calendar" groups="pdk-fs" />
-  <project path="packages/apps/Camera2" name="platform/packages/apps/Camera2" groups="pdk-fs" />
   <project path="packages/apps/Car/Calendar" name="platform/packages/apps/Car/Calendar" groups="pdk-fs" />
   <project path="packages/apps/Car/SystemUI" name="platform/packages/apps/Car/SystemUI" groups="pdk-fs" />
   <project path="packages/apps/Car/Cluster" name="platform/packages/apps/Car/Cluster" groups="pdk-fs" />
@@ -970,7 +1024,6 @@
   <project path="system/ca-certificates" name="platform/system/ca-certificates" groups="pdk" />
   <project path="system/chre" name="platform/system/chre"  groups="pdk" />
   <project path="system/connectivity/wificond" name="platform/system/connectivity/wificond" groups="pdk" />
-  <project path="system/core" name="platform/system/core" groups="pdk" />
   <project path="system/dmesgd" name="platform/system/dmesgd" groups="pdk" />
   <project path="system/extras" name="platform/system/extras" groups="pdk" />
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" />
@@ -994,7 +1047,6 @@
   <project path="system/linkerconfig" name="platform/system/linkerconfig" groups="pdk" />
   <project path="system/logging" name="platform/system/logging" groups="pdk" />
   <project path="system/media" name="platform/system/media" groups="pdk" />
-  <project path="system/memory/libion" name="platform/system/memory/libion" groups="pdk" />
   <project path="system/memory/libdmabufheap" name="platform/system/memory/libdmabufheap" groups="pdk" />
   <project path="system/memory/libmeminfo" name="platform/system/memory/libmeminfo" groups="pdk" />
   <project path="system/memory/libmemtrack" name="platform/system/memory/libmemtrack" groups="pdk" />
