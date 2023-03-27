@@ -4,12 +4,12 @@
     <remote name="rita" fetch="ssh://git@gitlab.baylibre.com/baylibre/mediatek/rita/" />
     <remote name="github" fetch="https://github.com/" />
 
-    <project path="arm-trusted-firmware" name="trusted-firmware-a" remote="bsp" revision="mtk-v2.6" />
+    <project path="arm-trusted-firmware" name="trusted-firmware-a" remote="bsp" revision="mtk-v2.8" />
     <project path="build" name="build-bootloaders" remote="bsp" revision="main" />
     <project path="optee-os" name="optee-os" remote="bsp" revision="mtk-v3.18" />
     <project path="u-boot" name="u-boot" remote="bsp" revision="mtk-v2023.01" />
     <project path="libbase-prebuilts" name="libbase-prebuilt" remote="bsp" revision="main" />
-    <project path="mbedtls" name="ARMmbed/mbedtls" remote="github" revision="refs/tags/mbedtls-2.26.0" />
+    <project path="mbedtls" name="ARMmbed/mbedtls" remote="github" revision="refs/tags/mbedtls-2.28.0" />
 
     <!-- OPTEE: Trusted Applications -->
     <project path="optee-ta/optee-otp" name="optee-otp" remote="bsp" revision="main" />

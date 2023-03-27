@@ -4,7 +4,7 @@
             fetch="ssh://git@gitlab.baylibre.com/baylibre/mediatek/nda/"
             revision="main" />
 
-    <project path="libdram" name="libdram" remote="nda" />
+    <project path="libatf" name="libatf" remote="nda" />
     <project path="lk" name="lk" remote="nda" />
     <project path="mtk-secure-boot-tools" name="mtk-secure-boot-tools" remote="nda" revision="python3" />
 </manifest>
