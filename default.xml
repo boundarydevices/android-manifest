@@ -5,11 +5,9 @@
            fetch="https://android.googlesource.com/"
            review="https://android-review.googlesource.com/" />
   <remote  name="android-imx"
-           fetch="https://source.codeaurora.org/external/imx/aosp/" />
-  <remote  name="android-imx-orig"
-           fetch="https://source.codeaurora.org/external/imx/android-imx" />
+	   fetch="https://github.com/nxp-imx-android" />
   <remote  name="imx-linux-sdk"
-           fetch="https://source.codeaurora.org/external/imx/" />
+           fetch="https://github.com/nxp-imx" />
   <remote  name="imx-proprietary"
            fetch="https://github.com/nxp/" />
   <remote  name="boundary-github"
