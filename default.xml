@@ -4,8 +4,10 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com/"
            review="https://android-review.googlesource.com/" />
-  <remote  name="codeaurora-imx"
-           fetch="https://source.codeaurora.org/external/imx/" />
+  <remote  name="imx-android"
+	   fetch="https://github.com/nxp-imx-android" />
+  <remote  name="imx-linux-sdk"
+           fetch="https://github.com/nxp-imx" />
   <remote  name="imx-proprietary"
            fetch="https://github.com/nxp/" />
   <remote  name="boundary-github"
@@ -50,29 +52,28 @@
   <project path="vendor/quectel/ec2x" name="vendor/quectel/ec2x" remote="boundary-linode" revision="boundary-android-10.0.0_2.5.0" />
 
   <!-- Public i.MX repositories -->
-  <project path="bootable/recovery" name="aosp/platform/bootable/recovery" groups="pdk" remote="codeaurora-imx" revision="refs/tags/android-10.0.0_2.5.0" />
-  <project path="development" name="aosp/platform/development" groups="developers,pdk-cw-fs,pdk-fs" remote="codeaurora-imx" revision="refs/tags/android-10.0.0_2.5.0" />
-  <project path="external/avb" name="aosp/platform/external/avb" groups="pdk" remote="codeaurora-imx" revision="refs/tags/android-10.0.0_2.5.0" />
-  <project path="external/tinyalsa" name="aosp/platform/external/tinyalsa" groups="pdk" remote="codeaurora-imx" revision="refs/tags/android-10.0.0_2.5.0" />
-  <project path="frameworks/av" name="aosp/platform/frameworks/av" groups="pdk" remote="codeaurora-imx" revision="refs/tags/android-10.0.0_2.5.0" />
-  <project path="frameworks/opt/net/ethernet" name="aosp/platform/frameworks/opt/net/ethernet" groups="pdk-fs" remote="codeaurora-imx" revision="refs/tags/android-10.0.0_2.5.0" />
-  <project path="kernel/configs" name="aosp/kernel/configs" groups="vts,pdk" remote="codeaurora-imx" revision="refs/tags/android-10.0.0_2.5.0" />
-  <project path="packages/apps/Camera2" name="aosp/platform/packages/apps/Camera2" groups="pdk-fs" remote="codeaurora-imx" revision="refs/tags/android-10.0.0_2.5.0" />
-  <project path="packages/apps/DeskClock" name="aosp/platform/packages/apps/DeskClock" groups="pdk-fs" remote="codeaurora-imx" revision="refs/tags/android-10.0.0_2.5.0" />
-  <project path="packages/apps/Gallery2" name="aosp/platform/packages/apps/Gallery2" groups="pdk-fs" remote="codeaurora-imx" revision="refs/tags/android-10.0.0_2.5.0" />
-  <project path="packages/apps/LegacyCamera" name="aosp/platform/packages/apps/LegacyCamera" groups="pdk-fs" remote="codeaurora-imx" revision="refs/tags/android-10.0.0_2.5.0" />
-  <project path="packages/apps/Settings" name="aosp/platform/packages/apps/Settings" groups="pdk-fs" remote="codeaurora-imx" revision="refs/tags/android-10.0.0_2.5.0" />
-  <project path="packages/apps/SoundRecorder" name="aosp/platform/packages/apps/SoundRecorder" groups="pdk-fs" remote="codeaurora-imx" revision="refs/tags/android-10.0.0_2.5.0" />
-  <project path="system/extras" name="aosp/platform/system/extras" groups="pdk" remote="codeaurora-imx" revision="refs/tags/android-10.0.0_2.5.0" />
-  <project path="system/keymaster" name="aosp/platform/system/keymaster" groups="pdk" remote="codeaurora-imx" revision="refs/tags/android-10.0.0_2.5.0"/>
-  <project path="system/media" name="aosp/platform/system/media" groups="pdk" remote="codeaurora-imx" revision="refs/tags/android-10.0.0_2.5.0" />
-  <project path="system/tools/bpt" name="aosp/platform/system/tools/bpt" groups="pdk" remote="codeaurora-imx" revision="refs/tags/android-10.0.0_2.5.0" />
-  <project path="system/sepolicy" name="aosp/platform/system/sepolicy" groups="pdk" remote="codeaurora-imx" revision="refs/tags/android-10.0.0_2.5.0" />
-  <project path="system/vold" name="aosp/platform/system/vold" groups="pdk" remote="codeaurora-imx" revision="refs/tags/android-10.0.0_2.5.0" />
-  <project path="vendor/nxp-opensource/imx-lib" name="imx-lib" remote="codeaurora-imx" revision="refs/tags/android-10.0.0_2.5.0" />
-  <project path="vendor/nxp-opensource/libdrm-imx" name="libdrm-imx" remote="codeaurora-imx" revision="refs/tags/android-10.0.0_2.5.0" />
-  <project path="vendor/nxp-opensource/nn-imx" name="nn-imx" remote="codeaurora-imx" revision="refs/tags/android-10.0.0_2.5.0" />
-  <project path="vendor/nxp-opensource/verisilicon_sw_isp_vvcam" name="isp-vvcam" remote="codeaurora-imx" revision="refs/tags/android-10.0.0_2.5.0" />
+  <project path="bootable/recovery" name="aosp_platform_bootable_recovery" remote="imx-android" revision="refs/tags/android-10.0.0_2.5.0" />
+  <project path="development" name="aosp_platform_development" remote="imx-android" revision="refs/tags/android-10.0.0_2.5.0" />
+  <project path="external/avb" name="aosp_platform_external_avb" remote="imx-android" revision="refs/tags/android-10.0.0_2.5.0" />
+  <project path="external/tinyalsa" name="aosp_platform_external_tinyalsa" remote="imx-android" revision="refs/tags/android-10.0.0_2.5.0" />
+  <project path="frameworks/av" name="aosp_platform_frameworks_av" remote="imx-android" revision="refs/tags/android-10.0.0_2.5.0" />
+  <project path="frameworks/opt/net/ethernet" name="aosp_platform_frameworks_opt_net_ethernet" remote="imx-android" revision="refs/tags/android-10.0.0_2.5.0" />
+  <project path="kernel/configs" name="aosp_kernel_configs" remote="imx-android" revision="refs/tags/android-10.0.0_2.5.0" />
+  <project path="packages/apps/Camera2" name="aosp_platform_packages_apps_Camera2" remote="imx-android" revision="refs/tags/android-10.0.0_2.5.0" />
+  <project path="packages/apps/DeskClock" name="aosp_platform_packages_apps_DeskClock" remote="imx-android" revision="refs/tags/android-10.0.0_2.5.0" />
+  <project path="packages/apps/Gallery2" name="aosp_platform_packages_apps_Gallery2" remote="imx-android" revision="refs/tags/android-10.0.0_2.5.0" />
+  <project path="packages/apps/LegacyCamera" name="aosp_platform_packages_apps_LegacyCamera" remote="imx-android" revision="refs/tags/android-10.0.0_2.5.0" />
+  <project path="packages/apps/Settings" name="aosp_platform_packages_apps_Settings" remote="imx-android" revision="refs/tags/android-10.0.0_2.5.0" />
+  <project path="packages/apps/SoundRecorder" name="aosp_platform_packages_apps_SoundRecorder" remote="imx-android" revision="refs/tags/android-10.0.0_2.5.0" />
+  <project path="system/extras" name="aosp_platform_system_extras" remote="imx-android" revision="refs/tags/android-10.0.0_2.5.0" />
+  <project path="system/keymaster" name="aosp_platform_system_keymaster" remote="imx-android" revision="refs/tags/android-10.0.0_2.5.0"/>
+  <project path="system/media" name="aosp_platform_system_media" remote="imx-android" revision="refs/tags/android-10.0.0_2.5.0" />
+  <project path="system/tools/bpt" name="aosp_platform_system_tools_bpt" remote="imx-android" revision="refs/tags/android-10.0.0_2.5.0" />
+  <project path="system/sepolicy" name="aosp_platform_system_sepolicy" remote="imx-android" revision="refs/tags/android-10.0.0_2.5.0" />
+  <project path="system/vold" name="aosp_platform_system_vold" remote="imx-android" revision="refs/tags/android-10.0.0_2.5.0" />
+  <project path="vendor/nxp-opensource/imx-lib" name="imx-lib" remote="imx-linux-sdk" revision="refs/tags/android-10.0.0_2.5.0" />
+  <project path="vendor/nxp-opensource/nn-imx" name="nn-imx" remote="imx-linux-sdk" revision="refs/tags/android-10.0.0_2.5.0" />
+  <project path="vendor/nxp-opensource/verisilicon_sw_isp_vvcam" name="isp-vvcam" remote="imx-linux-sdk" revision="refs/tags/android-10.0.0_2.5.0" />
   <project path="vendor/nxp/vpu_wrapper" name="imx-vpuwrap" remote="imx-proprietary" revision="refs/tags/android-10.0.0_2.5.0" />
 
   <!-- Unchanged AOSP projects -->
