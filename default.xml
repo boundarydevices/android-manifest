@@ -4,12 +4,10 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com/"
            review="https://android-review.googlesource.com/" />
-  <remote  name="android-imx"
-           fetch="https://source.codeaurora.org/external/imx/aosp/" />
-  <remote  name="android-imx-orig"
-           fetch="https://source.codeaurora.org/external/imx/android-imx" />
+  <remote  name="imx-android"
+           fetch="https://github.com/nxp-imx-android/" />
   <remote  name="imx-linux-sdk"
-           fetch="https://source.codeaurora.org/external/imx/" />
+           fetch="https://github.com/nxp-imx/" />
   <remote  name="imx-proprietary"
            fetch="https://github.com/nxp/" />
   <remote  name="boundary-github"
@@ -61,19 +59,19 @@
   <project path="vendor/nxp" name="vendor/nxp" remote="boundary-linode" revision="boundary-android-12.0.0_1.0.0" />
 
   <!-- Public i.MX repositories -->
-  <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" remote="android-imx" revision="refs/tags/android-12.0.0_1.0.0" />
+  <project path="bootable/recovery" name="aosp_platform_bootable_recovery" remote="imx-android" revision="refs/tags/android-12.0.0_1.0.0" />
   <project path="external/glm" name="g-truc/glm" remote="github" revision="bf71a834948186f4097caa076cd2663c69a10e1e" />
-  <project path="external/tinyalsa" name="platform/external/tinyalsa" groups="pdk" remote="android-imx" revision="refs/tags/android-12.0.0_1.0.0" />
+  <project path="external/tinyalsa" name="aosp_platform_external_tinyalsa" remote="imx-android" revision="refs/tags/android-12.0.0_1.0.0" />
   <project path="external/wireless-regdb" name="wireless-regdb" remote="wireless-regdb" revision="2ce78ed90f71955f7b223c17b5cda6c8a7708efe" />
-  <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" remote="android-imx" revision="refs/tags/android-12.0.0_1.0.0" />
-  <project path="hardware/google/camera" name="platform/hardware/google/camera" groups="pdk" remote="android-imx" revision="refs/tags/android-12.0.0_1.0.0" />
-  <project path="hardware/interfaces" name="platform/hardware/interfaces" groups="pdk" remote="android-imx" revision="refs/tags/android-12.0.0_1.0.0" />
-  <project path="packages/apps/Camera2" name="platform/packages/apps/Camera2" groups="pdk-fs" remote="android-imx" revision="refs/tags/android-12.0.0_1.0.0" />
-  <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" groups="pdk-fs" remote="android-imx" revision="refs/tags/android-12.0.0_1.0.0" />
-  <project path="packages/providers/MediaProvider" name="platform/packages/providers/MediaProvider" groups="pdk" remote="android-imx" revision="refs/tags/android-12.0.0_1.0.0" />
-  <project path="system/hardware/interfaces" name="platform/system/hardware/interfaces" groups="pdk" remote="android-imx" revision="refs/tags/android-12.0.0_1.0.0" />
-  <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" remote="android-imx" revision="refs/tags/android-12.0.0_1.0.0" />
-  <project path="system/memory/libion" name="platform/system/memory/libion" groups="pdk" remote="android-imx" revision="refs/tags/android-12.0.0_1.0.0"/>
+  <project path="frameworks/av" name="aosp_platform_frameworks_av" remote="imx-android" revision="refs/tags/android-12.0.0_1.0.0" />
+  <project path="hardware/google/camera" name="aosp_platform_hardware_google_camera" remote="imx-android" revision="refs/tags/android-12.0.0_1.0.0" />
+  <project path="hardware/interfaces" name="aosp_platform_hardware_interfaces" remote="imx-android" revision="refs/tags/android-12.0.0_1.0.0" />
+  <project path="packages/apps/Camera2" name="aosp_platform_packages_apps_Camera2" remote="imx-android" revision="refs/tags/android-12.0.0_1.0.0" />
+  <project path="packages/apps/SoundRecorder" name="aosp_platform_packages_apps_SoundRecorder" remote="imx-android" revision="refs/tags/android-12.0.0_1.0.0" />
+  <project path="packages/providers/MediaProvider" name="aosp_platform_packages_providers_MediaProvider" remote="imx-android" revision="refs/tags/android-12.0.0_1.0.0" />
+  <project path="system/hardware/interfaces" name="aosp_platform_system_hardware_interfaces" remote="imx-android" revision="refs/tags/android-12.0.0_1.0.0" />
+  <project path="system/keymaster" name="aosp_platform_system_keymaster" remote="imx-android" revision="refs/tags/android-12.0.0_1.0.0" />
+  <project path="system/memory/libion" name="aosp_platform_system_memory_libion" remote="imx-android" revision="refs/tags/android-12.0.0_1.0.0" />
   <project path="system/tools/bpt" name="platform/system/tools/bpt" groups="pdk" revision="e2c77aebf72d56beb50329e9ce873ea834e02164" />
   <project path="vendor/nxp-opensource/imx-lib" name="imx-lib" remote="imx-linux-sdk" revision="refs/tags/android-12.0.0_1.0.0" />
   <project path="vendor/nxp-opensource/imx-mkimage" name="imx-mkimage" remote="imx-linux-sdk" revision="refs/tags/android-12.0.0_1.0.0" />
