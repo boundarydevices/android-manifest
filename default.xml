@@ -31,6 +31,7 @@
   <project path="vendor/boundary/kernel_imx" name="linux" remote="boundary-github" revision="boundary-android-13.0.0_1.0.0" />
   <project path="vendor/boundary/qcacld-2.0" name="qcacld-2.0" remote="boundary-github" revision="boundary-CNSS.LEA.NRT_3.1" />
   <project path="vendor/boundary/qca-firmware" name="qca-firmware" remote="boundary-github" revision="bd-sdmac-qcacld-lea-3.0" />
+  <project path="vendor/boundary/cypress-firmware" name="cypress-firmware" remote="boundary-github" revision="lwb5plus-sdio-sa-firmware-10.54.0.13" />
 
   <!-- Boundary Devices machine layer -->
   <project path="device/boundary" name="android_device_boundary" remote="boundary-github" revision="boundary-android-13.0.0_1.0.0" >
