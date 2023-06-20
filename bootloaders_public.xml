@@ -13,6 +13,6 @@
 
     <!-- OPTEE: Trusted Applications -->
     <project path="optee-ta/optee-otp" name="optee-otp" remote="bsp" revision="main" />
-    <project path="optee-ta/kmgk" name="hardware/linaro/kmgk" remote="rita" revision="mtk-android-12" />
+    <project path="optee-ta/kmgk" name="hardware/linaro/kmgk" remote="rita" revision="mtk-android-13" />
     <project path="optee-ta/optee_test" name="OP-TEE/optee_test" remote="github" revision="d9d269e8012809c919000e7ca775fffbfd958e7c" />
 </manifest>

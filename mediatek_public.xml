@@ -4,14 +4,14 @@
 
     <remote name="rita"
             fetch="ssh://git@gitlab.baylibre.com/baylibre/mediatek/rita/"
-            revision="mtk-android-12" />
+            revision="mtk-android-13" />
     <remote name="bsp" fetch="ssh://git@gitlab.baylibre.com/baylibre/mediatek/bsp/" />
     <remote name="github" fetch="https://github.com/" />
 
     <!-- public bsp (common) projects -->
     <project path="vendor/linaro/optee-os" name="optee-os" remote="bsp" revision="mtk-v3.18" groups="mediatek" />
     <project path="vendor/linaro/optee_client" name="optee_client" remote="bsp" revision="mtk-v3.18" groups="mediatek" />
-    <project path="external/libcamera" name="libcamera" remote="bsp" revision="mtk-android-12" groups="mediatek" />
+    <project path="external/libcamera" name="libcamera" remote="bsp" revision="mtk-android-13" groups="mediatek" />
 
     <!-- public rita projects -->
     <project path="device/mediatek/boards" name="device/mediatek/boards" remote="rita" groups="mediatek" />
@@ -53,5 +53,5 @@
         <linkfile src="lib3/yaml" dest="vendor/mediatek/tools/mbr/yaml" />
     </project>
     <project path="external/tinyhal" name="CirrusLogic/tinyhal" remote="github" revision="69d47887c13da461bf8400231a1c7f7290826037" groups="mediatek" />
-    <project path="external/android-lights-hal" name="SoMainline/android-lights-hal" remote="github" revision="a823b700e02e88bee09456f030a1667e7588ba77" groups="mediatek" />
+    <project path="external/android-lights-hal" name="SoMainline/android-lights-hal" remote="github" revision="aosp-13.0" groups="mediatek" />
 </manifest>

@@ -2,7 +2,7 @@
 <manifest>
     <remote name="rita"
             fetch="ssh://git@gitlab.baylibre.com/baylibre/mediatek/rita/"
-            revision="mtk-android-12" />
+            revision="mtk-android-13" />
 
     <project path="vendor/cadence/prebuilts" name="vendor/cadence/prebuilts" remote="rita" groups="cadence-restricted" />
 </manifest>
