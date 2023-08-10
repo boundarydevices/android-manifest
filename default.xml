@@ -5,13 +5,11 @@
            fetch="https://android.googlesource.com/"
            review="https://android-review.googlesource.com/" />
   <remote  name="boundary-github"
-           fetch="git://github.com/boundarydevices/" />
+           fetch="https://github.com/boundarydevices/" />
   <remote  name="boundary-linode"
 	   fetch="ssh://git@linode.boundarydevices.com/" />
-  <remote  name="freescale"
-	   fetch="git://git.freescale.com/" />
   <remote  name="github"
-           fetch="git://github.com/" />
+           fetch="https://github.com/" />
   <default revision="refs/tags/android-4.4.3_r1"
            remote="aosp"
            sync-j="4" />
