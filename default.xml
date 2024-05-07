@@ -49,8 +49,8 @@
   <project path="external/libgpiod" name="libgpiod" remote="boundary-github" revision="v1.4.x" />
   <project path="external/libubootenv" name="libubootenv" remote="boundary-github" revision="master" />
   <project path="prebuilts/toolchains" name="prebuilts/toolchains" remote="boundary-linode" revision="boundary-android-14.0.0_1.2.0" />
-  <project path="vendor/boundary/backports" name="LairdCP/backports" remote="github" revision="LRD-REL-11.171.0.28" />
-  <project path="vendor/boundary/radio_firmware" name="LairdCP/radio_firmware" remote="github" revision="LRD-REL-11.171.0.28" />
+  <project path="vendor/boundary/backports" name="LairdCP/backports" remote="github" revision="refs/tags/LRD-REL-11.171.0.28" />
+  <project path="vendor/boundary/radio_firmware" name="LairdCP/radio_firmware" remote="github" revision="refs/tags/LRD-REL-11.171.0.28" />
   <project path="vendor/quectel/ec2x" name="vendor/quectel/ec2x" remote="boundary-linode" revision="boundary-android-14.0.0_1.2.0" />
 
   <!-- Proprietary i.MX repositories -->
