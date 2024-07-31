@@ -41,6 +41,7 @@
   <!-- Boundary Devices updates to other components -->
   <project path="frameworks/base" name="android_frameworks_base" remote="boundary-github" revision="boundary-android-13.0.0_1.0.0" />
   <project path="frameworks/native" name="frameworks_native" remote="boundary-github" revision="boundary-android-13.0.0_1.0.0" />
+  <project path="hardware/ril" name="android_hardware_ril" remote="boundary-github" revision="boundary-android-13.0.0_1.0.0" />
   <project path="system/core" name="android_system_core" remote="boundary-github" revision="boundary-android-13.0.0_1.0.0" />
   <project path="vendor/nxp-opensource/imx" name="android_hardware_imx" remote="boundary-github" revision="boundary-android-13.0.0_1.0.0" />
   <project path="vendor/nxp-opensource/fsl_imx_demo" name="fsl_imx_demo" remote="boundary-github" revision="boundary-android-13.0.0_1.0.0" />
@@ -813,7 +814,6 @@
   <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" />
   <project path="hardware/nxp/nfc" name="platform/hardware/nxp/nfc" groups="pdk" />
   <project path="hardware/nxp/secure_element" name="platform/hardware/nxp/secure_element" groups="pdk" />
-  <project path="hardware/ril" name="platform/hardware/ril" groups="pdk" />
   <project path="kernel/configs" name="kernel/configs" groups="vts,pdk" />
   <project path="kernel/prebuilts/5.10/arm64" name="kernel/prebuilts/5.10/arm64" groups="pdk" clone-depth="1" />
   <project path="kernel/prebuilts/5.10/x86_64" name="kernel/prebuilts/5.10/x86-64" groups="pdk" clone-depth="1" />
