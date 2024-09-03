@@ -7,7 +7,7 @@
     <project path="arm-trusted-firmware" name="trusted-firmware-a" remote="bsp" revision="mtk-v2.8" />
     <project path="ddr-loader" name="trusted-firmware-a" remote="bsp" revision="mtk-ddr-loader" />
     <project path="build" name="build-bootloaders" remote="bsp" revision="main" />
-    <project path="optee-os" name="optee-os" remote="bsp" revision="mtk-v3.21" />
+    <project path="optee-os" name="optee-os" remote="bsp" revision="mtk-v4.1" />
     <project path="k-boot" name="Baylibre/k-boot" remote="github" revision="main" sync-s="true" />
     <project path="u-boot" name="u-boot" remote="bsp" revision="mtk-v2023.01" />
     <project path="libbase-prebuilts" name="libbase-prebuilt" remote="bsp" revision="main" />
@@ -16,5 +16,5 @@
     <!-- OPTEE: Trusted Applications -->
     <project path="optee-ta/optee-otp" name="optee-otp" remote="bsp" revision="main" />
     <project path="optee-ta/kmgk" name="hardware/linaro/kmgk" remote="rita" revision="mtk-android-14" />
-    <project path="optee-ta/optee_test" name="OP-TEE/optee_test" remote="github" revision="232dfd28c6295d12c34df861bed1e6f8caf9ab3b" />
+    <project path="optee-ta/optee_test" name="OP-TEE/optee_test" remote="github" revision="2e1e7a9c9d659585566a75fc8802f4758c42bcb2" />
 </manifest>
