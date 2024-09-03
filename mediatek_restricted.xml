@@ -8,6 +8,6 @@
     <project path="vendor/mediatek/mdpd" name="mdpd" remote="nda" groups="mediatek-restricted" />
     <project path="vendor/mediatek/wifitest" name="wifitest" remote="nda" groups="mediatek-restricted" />
     <project path="vendor/mediatek/wireless-restricted" name="wireless-firmware" remote="nda" groups="mediatek-restricted" />
-    <project path="vendor/mediatek/kernel-restricted-binaries" name="rita/kernel-restricted-binaries" remote="nda" revision="mtk-android-13" groups="mediatek-restricted" clone-depth="1" />
+    <project path="vendor/mediatek/kernel-restricted-binaries" name="rita/kernel-restricted-binaries" remote="nda" revision="mtk-android-14" groups="mediatek-restricted" clone-depth="1" />
 
 </manifest>

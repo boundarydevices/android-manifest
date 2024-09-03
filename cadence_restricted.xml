@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<manifest>
-    <remote name="rita"
-            fetch="ssh://git@gitlab.baylibre.com/baylibre/mediatek/rita/"
-            revision="mtk-android-13" />
-
-    <project path="vendor/cadence/prebuilts" name="vendor/cadence/prebuilts" remote="rita" groups="cadence-restricted" />
-</manifest>

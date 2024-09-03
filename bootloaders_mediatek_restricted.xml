@@ -5,6 +5,5 @@
             revision="main" />
 
     <project path="libatf" name="libatf" remote="nda" />
-    <project path="lk" name="lk" remote="nda" />
     <project path="mtk-secure-boot-tools" name="mtk-secure-boot-tools" remote="nda" revision="python3" />
 </manifest>
