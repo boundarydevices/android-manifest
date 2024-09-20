@@ -9,8 +9,8 @@
     <remote name="github" fetch="https://github.com/" />
 
     <!-- public bsp (common) projects -->
-    <project path="vendor/linaro/optee-os" name="optee-os" remote="bsp" revision="mtk-v4.1" groups="mediatek" />
-    <project path="vendor/linaro/optee_client" name="OP-TEE/optee_client" remote="github" revision="afbd31d9592e8919cf2b6883e33d80fcc32ccdc2" groups="mediatek" />
+    <project path="vendor/linaro/optee-os" name="optee-os" remote="bsp" revision="mtk-v4.3" groups="mediatek" />
+    <project path="vendor/linaro/optee_client" name="OP-TEE/optee_client" remote="github" revision="0293dd912c9cf9f3e4064588c0115b39fc33ad54" groups="mediatek" />
     <project path="external/libcamera" name="libcamera" remote="bsp" revision="mtk-android-14" groups="mediatek" />
 
     <!-- public rita projects -->
@@ -44,7 +44,7 @@
         <linkfile src="oyaml.py" dest="vendor/mediatek/tools/mbr/oyaml.py" />
     </project>
     <project path="external/onsemi" name="ONSemiconductor/ap1302_binaries" remote="github" revision="72be5d2ad07d4d722f3ee236ccde19567e91b6c3" groups="mediatek" />
-    <project path="external/optee_test" name="OP-TEE/optee_test" remote="github" revision="d9d269e8012809c919000e7ca775fffbfd958e7c" groups="mediatek" />
+    <project path="external/optee_test" name="OP-TEE/optee_test" remote="github" revision="refs/tags/4.3.0" groups="mediatek" />
     <project path="external/pyyaml" name="yaml/pyyaml" remote="github" revision="0f64cbfa54b0b22dc7b776b7b98a7cd657e84d78" groups="mediatek" >
         <linkfile src="lib3/yaml" dest="vendor/mediatek/tools/mbr/yaml" />
     </project>
