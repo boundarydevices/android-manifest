@@ -6,7 +6,7 @@
           revision="master-kernel-build-2021" />
   <remote name="bsp"
           fetch="ssh://git@gitlab.baylibre.com/baylibre/mediatek/bsp/"
-          revision="mtk-android12-5.10" />
+          revision="mtk-android14-5.10" />
 
   <superproject name="kernel/superproject" remote="aosp"/>
   <project path="build" name="kernel/build" remote="aosp" />
