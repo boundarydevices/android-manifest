@@ -32,7 +32,7 @@
     <!-- public AOSP forks -->
     <!-- drm hardware composer: add support for mali based MTK platforms (i500) -->
     <remove-project name="platform/external/drm_hwcomposer" />
-    <project path="external/drm_hwcomposer" name="aosp/platform/external/drm_hwcomposer" remote="rita" groups="mediatek" />
+    <project path="external/drm_hwcomposer" name="platform/external/drm_hwcomposer" revision="0bc25bbaabcf7160b97d1f5ee028622abfb46666" groups="drm_hwcomposer,pdk-fs" />
     <!-- drm: add support of APU -->
     <remove-project name="platform/external/libdrm" />
     <project path="external/libdrm" name="aosp/platform/external/libdrm" remote="rita" groups="mediatek" />
