@@ -14,9 +14,7 @@
     <project path="external/libcamera" name="libcamera" remote="bsp" revision="mtk-android-14" groups="mediatek" />
 
     <!-- public rita projects -->
-    <project path="device/mediatek/boards" name="device/mediatek/boards" remote="rita" groups="mediatek" />
-    <project path="device/mediatek/common" name="device/mediatek/common" remote="rita" groups="mediatek" />
-    <project path="device/mediatek/boards-binaries" name="device/mediatek/boards-binaries" remote="rita" groups="mediatek" clone-depth="1" />
+    <project path="device/mediatek" name="device/mediatek" remote="rita" groups="mediatek" />
     <project path="hardware/linaro/kmgk" name="hardware/linaro/kmgk" remote="rita" groups="mediatek" />
     <project path="hardware/mediatek" name="hardware/mediatek" remote="rita" groups="mediatek" />
     <project path="vendor/arm/android-gralloc" name="vendor/arm/android-gralloc" remote="rita" groups="mediatek" />
@@ -25,17 +23,13 @@
     <project path="vendor/ilitek" name="vendor/ilitek" remote="rita" groups="mediatek" />
     <project path="vendor/mediatek/build" name="vendor/mediatek/build" remote="rita" groups="mediatek" />
     <project path="vendor/mediatek/demo-apps" name="vendor/mediatek/demo-apps" remote="rita" groups="mediatek" />
-    <project path="vendor/mediatek/prebuilts/egl" name="vendor/mediatek/prebuilts/egl" remote="rita" groups="mediatek" clone-depth="1" />
+    <project path="vendor/mediatek/prebuilts" name="vendor/mediatek/prebuilts" remote="rita" groups="mediatek" clone-depth="1" />
     <project path="vendor/mediatek/tools/mbr" name="vendor/mediatek/tools/mbr" remote="rita" groups="mediatek" />
     <project path="vendor/mediatek/wireless" name="vendor/mediatek/wireless" remote="rita" groups="mediatek" />
 
     <!-- public AOSP forks -->
-    <!-- drm hardware composer: add support for mali based MTK platforms (i500) -->
     <remove-project name="platform/external/drm_hwcomposer" />
     <project path="external/drm_hwcomposer" name="platform/external/drm_hwcomposer" revision="0bc25bbaabcf7160b97d1f5ee028622abfb46666" groups="drm_hwcomposer,pdk-fs" />
-    <!-- drm: add support of APU -->
-    <remove-project name="platform/external/libdrm" />
-    <project path="external/libdrm" name="aosp/platform/external/libdrm" remote="rita" groups="mediatek" />
     <project path="external/libyaml" name="external/libyaml" remote="rita" groups="mediatek" />
     <project path="external/android-lights-hal" name="external/android-lights-hal" remote="rita" groups="mediatek" />
 
