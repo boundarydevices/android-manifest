@@ -9,7 +9,6 @@
     <remote name="github" fetch="https://github.com/" />
 
     <!-- public bsp (common) projects -->
-    <project path="vendor/linaro/optee-os" name="optee-os" remote="bsp" revision="mtk-v4.3" groups="mediatek" />
     <project path="vendor/linaro/optee_client" name="OP-TEE/optee_client" remote="github" revision="0293dd912c9cf9f3e4064588c0115b39fc33ad54" groups="mediatek" />
     <project path="external/libcamera" name="libcamera" remote="bsp" revision="mtk-android-14" groups="mediatek" />
 
