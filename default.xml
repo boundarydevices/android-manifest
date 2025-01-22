@@ -69,7 +69,7 @@
   <project path="hardware/interfaces" name="aosp_platform_hardware_interfaces" remote="imx-android" revision="refs/tags/android-13.0.0_1.0.0" />
   <project path="packages/apps/Camera2" name="aosp_platform_packages_apps_Camera2" remote="imx-android" revision="refs/tags/android-13.0.0_1.0.0" />
   <project path="system/memory/libion" name="aosp_platform_system_memory_libion" remote="imx-android" revision="refs/tags/android-13.0.0_1.0.0" />
-  <project path="system/tools/bpt" name="platform/system/tools/bpt" groups="pdk" revision="e2c77aebf72d56beb50329e9ce873ea834e02164" />
+  <project path="system/tools/bpt" name="aosp_platform_system_tools_bpt" remote="imx-android" revision="refs/tags/android-14.0.0_1.2.0" />
   <project path="vendor/nxp-opensource/imx-lib" name="imx-lib" remote="imx-linux-sdk" revision="refs/tags/android-13.0.0_1.0.0" />
   <project path="vendor/nxp-opensource/imx-mkimage" name="imx-mkimage" remote="imx-linux-sdk" revision="refs/tags/android-13.0.0_1.0.0" />
   <project path="vendor/nxp-opensource/libdrm-imx" name="libdrm-imx" remote="imx-linux-sdk" revision="refs/tags/android-13.0.0_1.0.0" />
