@@ -36,6 +36,14 @@
   </project>
 
   <!-- Boundary Devices updates to other components -->
+  <project path="build/make" name="android_build" remote="boundary-github" revision="boundary-android-14.0.0_1.2.0" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
   <project path="frameworks/base" name="android_frameworks_base" remote="boundary-github" revision="boundary-android-14.0.0_1.2.0" />
   <project path="frameworks/native" name="frameworks_native" remote="boundary-github" revision="boundary-android-14.0.0_1.2.0" />
   <project path="hardware/ril" name="android_hardware_ril" remote="boundary-github" revision="boundary-android-14.0.0_1.2.0" />
@@ -83,14 +91,6 @@
   <project path="vendor/nxp/vpu_wrapper" name="imx-vpuwrap" remote="imx-proprietary" revision="refs/tags/android-14.0.0_1.2.0" />
 
   <!-- Unchanged AOSP projects -->
-  <project path="build/make" name="platform/build" groups="pdk" >
-    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
-    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
-    <linkfile src="core" dest="build/core" />
-    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
-    <linkfile src="target" dest="build/target" />
-    <linkfile src="tools" dest="build/tools" />
-  </project>
   <project path="build/orchestrator" name="platform/build/orchestrator" groups="pdk" />
   <project path="build/bazel" name="platform/build/bazel" groups="pdk" >
     <linkfile src="bazel.WORKSPACE" dest="WORKSPACE" />
