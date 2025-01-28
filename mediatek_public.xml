@@ -18,6 +18,8 @@
     <project path="hardware/mediatek" name="hardware/mediatek" remote="rita" groups="mediatek" />
     <project path="vendor/arm/android-gralloc" name="vendor/arm/android-gralloc" remote="rita" groups="mediatek" />
     <project path="vendor/arm/libopencl-stub" name="vendor/arm/libopencl-stub" remote="rita" groups="mediatek" />
+    <project path="vendor/focaltech" name="vendor/focaltech" remote="rita" groups="mediatek" />
+    <project path="vendor/ilitek" name="vendor/ilitek" remote="rita" groups="mediatek" />
     <project path="vendor/mediatek/build" name="vendor/mediatek/build" remote="rita" groups="mediatek" />
     <project path="vendor/mediatek/demo-apps" name="vendor/mediatek/demo-apps" remote="rita" groups="mediatek" />
     <project path="vendor/mediatek/prebuilts" name="vendor/mediatek/prebuilts" remote="rita" groups="mediatek" clone-depth="1" />
