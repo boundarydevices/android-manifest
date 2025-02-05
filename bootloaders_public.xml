@@ -4,7 +4,7 @@
     <remote name="rita" fetch="ssh://git@gitlab.baylibre.com/baylibre/mediatek/rita/" />
     <remote name="github" fetch="https://github.com/" />
 
-    <project path="arm-trusted-firmware" name="trusted-firmware-a" remote="bsp" revision="mtk-v2.8" />
+    <project path="arm-trusted-firmware" name="trusted-firmware-a" remote="bsp" revision="aiot-v2.6" />
     <project path="ddr-loader" name="trusted-firmware-a" remote="bsp" revision="mtk-ddr-loader" />
     <project path="build" name="build-bootloaders" remote="bsp" revision="main" />
     <project path="optee-os" name="optee-os" remote="bsp" revision="mtk-v4.3" />
