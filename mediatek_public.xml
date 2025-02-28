@@ -3,9 +3,9 @@
     <include name="aosp.xml" />
 
     <remote name="rita"
-            fetch="ssh://git@gitlab.baylibre.com/baylibre/mediatek/rita/"
+            fetch="https://gitlab.baylibre.com/baylibre/mediatek/rita/"
             revision="mtk-android-14" />
-    <remote name="bsp" fetch="ssh://git@gitlab.baylibre.com/baylibre/mediatek/bsp/" />
+    <remote name="bsp" fetch="https://gitlab.baylibre.com/baylibre/mediatek/bsp/" />
     <remote name="github" fetch="https://github.com/" />
 
     <!-- public bsp (common) projects -->
