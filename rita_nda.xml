@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
     <include name="mediatek_public.xml" />
+    <include name="mediatek_restricted.xml" />
 </manifest>
