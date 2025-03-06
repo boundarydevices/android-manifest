@@ -10,7 +10,8 @@
     <project path="optee-os" name="optee-os" remote="bsp" revision="mtk-v4.3" />
     <project path="k-boot" name="Baylibre/k-boot" remote="github" revision="main" sync-s="true" />
     <project path="u-boot" name="u-boot" remote="bsp" revision="mtk-v2024.10" />
-    <project path="libbase-prebuilts" name="libbase-prebuilt" remote="bsp" revision="main" />
+    <project path="libatf-prebuilt" name="libatf-prebuilt" remote="bsp" revision="main" />
+    <project path="libbase-prebuilt" name="libbase-prebuilt" remote="bsp" revision="main" />
     <project path="mbedtls" name="ARMmbed/mbedtls" remote="github" revision="refs/tags/mbedtls-2.28.0" />
 
     <!-- OPTEE: Trusted Applications -->
