@@ -60,4 +60,5 @@
 
   <!-- mediatek kernel -->
   <project path="common" name="linux" remote="bsp" groups="mediatek" />
+  <project path="common-modules/mali" name="mtk-mali-gpu-driver" remote="bsp" groups="mediatek" revision="r48p0" />
 </manifest>
