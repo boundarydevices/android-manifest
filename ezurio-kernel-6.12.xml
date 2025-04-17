@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="ezurio" fetch="https://github.com/boundarydevices" />
+
+    <include name="kernel-6.12.xml" />
+
+    <remove-project path="common" name="linux" remote="bsp" groups="mediatek" />
+
+    <project path="common" name="linux" remote="ezurio" revision="ezurio-mtk-android16-6.12" />
+</manifest>
