@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="ezurio" fetch="https://github.com/boundarydevices" />
+
+    <include name="bootloaders_public.xml" />
+
+    <remove-project path="arm-trusted-firmware" name="trusted-firmware-a" remote="bsp" revision="aiot-v2.6" />
+    <remove-project path="build" name="build-bootloaders" remote="bsp" revision="main" />
+    <remove-project path="u-boot" name="u-boot" remote="bsp" revision="mtk-v2024.10" />
+
+    <project path="arm-trusted-firmware" name="trusted-firmware-a" remote="ezurio" revision="ezurio-aiot-v2.6" />
+    <project path="build" name="build-bootloaders" remote="ezurio" revision="ezurio" />
+    <project path="u-boot" name="u-boot" remote="ezurio" revision="ezurio-mtk-v2024.10" />
+</manifest>
