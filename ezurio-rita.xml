@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="ezurio" fetch="https://github.com/boundarydevices" revision="mtk-android-14" />
+
+    <include name="rita.xml" />
+
+    <remove-project path="device/mediatek" name="device/mediatek" remote="rita" groups="mediatek" />
+
+    <project path="device/mediatek" name="android_device_mediatek" remote="ezurio" />
+    <project path="vendor/ezurio/prebuilts" name="android_vendor_ezurio_prebuilts" remote="ezurio" clone-depth="1" />
+</manifest>
