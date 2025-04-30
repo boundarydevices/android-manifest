@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="ezurio" fetch="https://github.com/boundarydevices" revision="ezurio-android-15.0.0_1.2.0" />
+  <remote name="ezurio-linode" fetch="ssh://git@linode.boundarydevices.com/" revision="ezurio-android-15.0.0_1.2.0" />
+
+  <include name="imx-android-15.0.0_1.2.0.xml" />
+
+  <!-- remove NXP/AOSP projects that we fork or remove -->
+  <remove-project path="device/nxp" name="android-imx_device_fsl" remote="imx-android" revision="refs/tags/android-15.0.0_1.2.0" />
+  <remove-project path="frameworks/native" name="aosp_platform_frameworks_native" remote="imx-android" revision="refs/tags/android-15.0.0_1.2.0" />
+  <remove-project path="hardware/nxp/libbt" name="android-imx_platform_hardware_nxp_libbt" remote="imx-android" revision="refs/tags/android-15.0.0_1.2.0" />
+  <remove-project path="hardware/nxp/wlan" name="android-imx_platform_hardware_nxp_wlan" remote="imx-android" revision="refs/tags/android-15.0.0_1.2.0" />
+  <remove-project path="packages/modules/Bluetooth" name="platform/packages/modules/Bluetooth" groups="pdk" />
+  <remove-project path="system/core" name="aosp_platform_system_core" remote="imx-android" revision="refs/tags/android-15.0.0_1.2.0" />
+  <remove-project path="vendor/nxp-opensource/arm-trusted-firmware" name="imx-atf" remote="imx-linux-sdk" revision="refs/tags/android-15.0.0_1.2.0" />
+  <remove-project path="vendor/nxp-opensource/fsl_imx_demo" name="android-imx_platform_packages_apps_fsl_imx_demo" remote="imx-android" revision="refs/tags/android-15.0.0_1.2.0" />
+  <remove-project path="vendor/nxp-opensource/imx" name="android-imx_platform_hardware_imx" remote="imx-android" revision="refs/tags/android-15.0.0_1.2.0" />
+  <remove-project path="vendor/nxp-opensource/imx-oei" name="imx-oei" remote="imx-linux-sdk" revision="refs/tags/android-15.0.0_1.2.0" />
+  <remove-project path="vendor/nxp-opensource/imx-sm" name="imx-sm" remote="imx-linux-sdk" revision="refs/tags/android-15.0.0_1.2.0" />
+  <remove-project path="vendor/nxp-opensource/kernel_imx" name="linux-imx" remote="imx-linux-sdk" revision="refs/tags/android-15.0.0_1.2.0" />
+  <remove-project path="vendor/nxp-opensource/uboot-imx" name="uboot-imx" remote="imx-linux-sdk" revision="refs/tags/android-15.0.0_1.2.0" />
+  <remove-project path="vendor/nxp-opensource/verisilicon_sw_isp_vvcam" name="isp-vvcam" remote="imx-linux-sdk" revision="refs/tags/android-15.0.0_1.2.0" />
+
+  <!-- proprietary NXP repositories -->
+  <project path="vendor/nxp" name="vendor/nxp" remote="ezurio-linode" />
+
+  <!-- Ezurio modifications -->
+  <project path="frameworks/native" name="frameworks_native" remote="ezurio" />
+  <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" remote="ezurio" />
+  <project path="system/core" name="android_system_core" remote="ezurio" />
+  <project path="vendor/nxp-opensource/imx" name="android_hardware_imx" remote="ezurio" />
+  <project path="vendor/nxp-opensource/fsl_imx_demo" name="fsl_imx_demo" remote="ezurio" />
+  <project path="vendor/nxp-opensource/verisilicon_sw_isp_vvcam" name="isp-vvcam" remote="ezurio" />
+
+  <!-- Ezurio additions -->
+  <project path="device/ezurio" name="android_device_boundary" remote="ezurio" >
+    <linkfile src="common/tools/imx-make.sh" dest="imx-make.sh" />
+  </project>
+  <project path="external/can-utils" name="linux-can/can-utils" remote="github" revision="master" />
+  <project path="external/libgpiod" name="libgpiod" remote="ezurio" revision="v1.4.x" />
+  <project path="external/libubootenv" name="libubootenv" remote="ezurio" revision="master" />
+  <project path="prebuilts/toolchains" name="prebuilts/toolchains" remote="ezurio-linode" />
+  <project path="vendor/ezurio/backports" name="Ezurio/summit_backports_release" remote="github" revision="refs/tags/LRD-REL-12.103.0.5" />
+  <project path="vendor/ezurio/radio_firmware" name="Ezurio/radio_firmware_release" remote="github" revision="refs/tags/LRD-REL-12.103.0.5" />
+  <project path="vendor/ezurio/arm-trusted-firmware" name="imx-atf" remote="ezurio" />
+  <project path="vendor/ezurio/kernel_imx" name="linux" remote="ezurio" />
+  <project path="vendor/ezurio/uboot-imx" name="u-boot" remote="ezurio" revision="boundary-v2022.04" />
+  <project path="vendor/ezurio/uboot-imx9" name="u-boot" remote="ezurio" revision="ezurio-lf_v2024.04" />
+  <project path="vendor/ezurio/imx-oei" name="imx-oei" remote="ezurio" />
+  <project path="vendor/ezurio/imx-sm" name="imx-sm" remote="ezurio" />
+
+  <!-- remove AOSP projects we don't need -->
+  <remove-project path="device/amlogic/yukawa" name="device/amlogic/yukawa" groups="device,yukawa,pdk" />
+  <remove-project path="device/google/akita" name="device/google/akita" groups="device,akita" />
+  <remove-project path="device/google/akita-sepolicy" name="device/google/akita-sepolicy" groups="device,akita" />
+  <remove-project path="device/google/bluejay" name="device/google/bluejay" groups="device,bluejay" />
+  <remove-project path="device/google/bluejay-sepolicy" name="device/google/bluejay-sepolicy" groups="device,bluejay" />
+  <remove-project path="device/google/caimito" name="device/google/caimito" groups="device,caimito" />
+  <remove-project path="device/google/caimito-sepolicy" name="device/google/caimito-sepolicy" groups="device,caimito" />
+  <remove-project path="device/google/comet" name="device/google/comet" groups="device,comet" />
+  <remove-project path="device/google/comet-sepolicy" name="device/google/comet-sepolicy" groups="device,comet" />
+  <remove-project path="device/google/felix" name="device/google/felix" groups="device,felix" />
+  <remove-project path="device/google/felix-sepolicy" name="device/google/felix-sepolicy" groups="device,felix" />
+  <remove-project path="device/google/lynx" name="device/google/lynx" groups="device,lynx" />
+  <remove-project path="device/google/lynx-sepolicy" name="device/google/lynx-sepolicy" groups="device,lynx" />
+  <remove-project path="device/google/pantah" name="device/google/pantah" groups="device,cloudripper,pdk-gs-arm" />
+  <remove-project path="device/google/pantah-sepolicy" name="device/google/pantah-sepolicy" groups="device,cloudripper,pdk-gs-arm" />
+  <remove-project path="device/google/raviole" name="device/google/raviole" groups="device,slider,pdk-gs-arm" />
+  <remove-project path="device/google/tangorpro" name="device/google/tangorpro" groups="device,tangorpro" />
+  <remove-project path="device/google/tangorpro-sepolicy" name="device/google/tangorpro-sepolicy" groups="device,tangorpro" />
+  <remove-project path="device/google/shusky" name="device/google/shusky" groups="device,ripcurrent,pdk-gs-arm" />
+  <remove-project path="device/google/shusky-sepolicy" name="device/google/shusky-sepolicy" groups="device,ripcurrent,pdk-gs-arm" />
+  <remove-project path="device/google/zuma" name="device/google/zuma" groups="device,ripcurrent,pdk-gs-arm" />
+  <remove-project path="device/google/zuma-sepolicy" name="device/google/zuma-sepolicy" groups="device,ripcurrent,pdk-gs-arm" />
+  <remove-project path="device/google/zumapro" name="device/google/zumapro" groups="device,ripcurrentpro" />
+  <remove-project path="device/google/zumapro-sepolicy" name="device/google/zumapro-sepolicy" groups="device,ripcurrentpro" />
+  <remove-project path="device/linaro/dragonboard" name="device/linaro/dragonboard" groups="device,dragonboard,pdk" />
+  <remove-project path="device/linaro/hikey" name="device/linaro/hikey" groups="device,hikey,pdk" />
+  <remove-project path="device/linaro/poplar" name="device/linaro/poplar" groups="device,poplar,pdk" />
+  <remove-project path="hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt" groups="pdk" />
+  <remove-project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" groups="pdk,broadcom_wlan" />
+  <remove-project path="hardware/qcom/wlan" name="platform/hardware/qcom/wlan" groups="qcom_wlan,pdk-qcom" />
+  <remove-project path="hardware/st/secure_element" name="platform/hardware/st/secure_element" groups="pdk" />
+  <remove-project path="hardware/st/secure_element2" name="platform/hardware/st/secure_element2" groups="pdk" />
+  <remove-project path="hardware/samsung/nfc" name="platform/hardware/samsung/nfc" groups="pdk" />
+  <remove-project path="hardware/synaptics/wlan" name="platform/hardware/synaptics/wlan" groups="pdk" />
+  <remove-project path="hardware/ti/am57x" name="platform/hardware/ti/am57x" groups="pdk" />
+  <remove-project path="kernel/prebuilts/6.1/arm64" name="kernel/prebuilts/6.1/arm64" groups="pdk" clone-depth="1" />
+  <remove-project path="kernel/prebuilts/6.1/x86_64" name="kernel/prebuilts/6.1/x86-64" groups="pdk" clone-depth="1" />
+  <remove-project path="kernel/prebuilts/common-modules/virtual-device/6.1/arm64" name="kernel/prebuilts/common-modules/virtual-device/6.1/arm64" groups="pdk" clone-depth="1" />
+  <remove-project path="kernel/prebuilts/common-modules/virtual-device/6.1/x86-64" name="kernel/prebuilts/common-modules/virtual-device/6.1/x86-64" groups="pdk" clone-depth="1" />
+</manifest>
