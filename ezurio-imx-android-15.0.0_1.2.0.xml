@@ -37,7 +37,6 @@
     <linkfile src="common/tools/imx-make.sh" dest="imx-make.sh" />
   </project>
   <project path="external/can-utils" name="linux-can/can-utils" remote="github" revision="master" />
-  <project path="external/libgpiod" name="libgpiod" remote="ezurio" revision="v1.4.x" />
   <project path="external/libubootenv" name="libubootenv" remote="ezurio" revision="master" />
   <project path="prebuilts/toolchains" name="prebuilts/toolchains" remote="ezurio-linode" />
   <project path="vendor/ezurio/backports" name="Ezurio/summit_backports_release" remote="github" revision="refs/tags/LRD-REL-12.103.0.5" />
