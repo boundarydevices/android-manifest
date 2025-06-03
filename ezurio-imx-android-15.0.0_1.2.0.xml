@@ -8,6 +8,7 @@
   <!-- remove NXP/AOSP projects that we fork or remove -->
   <remove-project path="device/nxp" name="android-imx_device_fsl" remote="imx-android" revision="refs/tags/android-15.0.0_1.2.0" />
   <remove-project path="frameworks/native" name="aosp_platform_frameworks_native" remote="imx-android" revision="refs/tags/android-15.0.0_1.2.0" />
+  <remove-project path="hardware/interfaces" name="aosp_platform_hardware_interfaces" remote="imx-android" revision="refs/tags/android-15.0.0_1.2.0" />
   <remove-project path="hardware/nxp/libbt" name="android-imx_platform_hardware_nxp_libbt" remote="imx-android" revision="refs/tags/android-15.0.0_1.2.0" />
   <remove-project path="hardware/nxp/wlan" name="android-imx_platform_hardware_nxp_wlan" remote="imx-android" revision="refs/tags/android-15.0.0_1.2.0" />
   <remove-project path="packages/modules/Bluetooth" name="platform/packages/modules/Bluetooth" groups="pdk" />
@@ -26,6 +27,7 @@
 
   <!-- Ezurio modifications -->
   <project path="frameworks/native" name="frameworks_native" remote="ezurio" />
+  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="ezurio" />
   <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" remote="ezurio" />
   <project path="system/core" name="android_system_core" remote="ezurio" />
   <project path="vendor/nxp-opensource/imx" name="android_hardware_imx" remote="ezurio" />
