@@ -5,7 +5,9 @@
     <include name="rita.xml" />
 
     <remove-project path="device/mediatek" name="device/mediatek" remote="rita" groups="mediatek" />
+    <remove-project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
 
+    <project path="bootable/recovery" name="android_bootable_recovery" remote="ezurio" />
     <project path="device/mediatek" name="android_device_mediatek" remote="ezurio" />
     <project path="vendor/ezurio/prebuilts" name="android_vendor_ezurio_prebuilts" remote="ezurio" clone-depth="1" />
 </manifest>
