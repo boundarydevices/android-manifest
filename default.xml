@@ -33,6 +33,7 @@
   <!-- Boundary Devices machine layer -->
   <project path="device/boundary" name="android_device_boundary" remote="boundary-github" revision="boundary-android-14.0.0_1.2.0" >
     <linkfile src="common/tools/imx-make.sh" dest="imx-make.sh" />
+    <linkfile src="scripts/create_build_archive.sh" dest="create_build_archive.sh" />
   </project>
 
   <!-- Boundary Devices updates to other components -->
